@@ -38,6 +38,15 @@ async function getPost(slug) {
   return data;
 }
 
+export async function generateMetadata({ params }, parent) {
+  // read route params
+  const { slug } = params;
+
+  return {
+    title: `Blog | ${slug.replaceAll("-", " ")}`,
+  };
+}
+
 async function page({ params }) {
   const { slug } = params;
   const data = await getPost(slug);

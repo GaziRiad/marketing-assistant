@@ -1,6 +1,6 @@
 import MainPost from "@/components/blog/MainPost";
 import SecondaryPosts from "@/components/blog/SecondaryPosts";
-import { client } from "../lib/sanity";
+import { client, urlFor } from "../lib/sanity";
 import Header from "@/components/Header";
 import BlogSlider from "@/components/blog/BlogSlider";
 import Footer from "@/components/Footer";
@@ -11,7 +11,6 @@ export const serializers = {
   types: {
     // Common block types
     block: ({ node, children }) => {
-      console.log(node);
       switch (node.style) {
         case "h1":
           return (
@@ -46,10 +45,11 @@ export const serializers = {
     image: ({ node }) => {
       return (
         <Image
-          height={600}
-          width={600}
-          src={node.asset.url}
-          className=" mb-4"
+          height={800}
+          width={800}
+          loading="lazy"
+          src={urlFor(node.asset).url()}
+          className="mb-4 w-full"
           alt={node.alt}
         />
       );
@@ -79,6 +79,10 @@ async function getPosts() {
 
   return data;
 }
+
+export const metadata = {
+  title: "BLOG",
+};
 
 async function Blog() {
   const data = await getPosts();

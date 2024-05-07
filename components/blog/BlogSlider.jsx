@@ -12,7 +12,6 @@ import {
 } from "@/components/ui/carousel";
 
 function BlogSlider({ posts }) {
-  console.log(posts);
   return (
     <section className="container mx-auto mb-12 flex w-full items-center justify-center px-5 xl:px-16">
       <Carousel className="w-[80%] lg:w-full">
