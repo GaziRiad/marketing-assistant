@@ -3,6 +3,7 @@ import SecondaryPosts from "@/components/blog/SecondaryPosts";
 import { client } from "../lib/sanity";
 import Header from "@/components/Header";
 import BlogSlider from "@/components/blog/BlogSlider";
+import Footer from "@/components/Footer";
 
 export const serializers = {
   types: {
@@ -79,6 +80,8 @@ async function Blog() {
       {data[0] && <MainPost post={data[0]} />}
       <SecondaryPosts posts={data.slice(1, 3)} />
       <BlogSlider posts={data} />
+
+      <Footer />
     </>
   );
 }

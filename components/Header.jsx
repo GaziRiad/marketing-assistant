@@ -7,10 +7,10 @@ function Header() {
       {/* <Logo /> */}
       <ul className="flex items-center justify-center gap-6 font-semibold text-zinc-800">
         <li className="transition-all hover:text-primary">
-          <Link href="#">About Us</Link>
+          <Link href="/about">About Us</Link>
         </li>
         <li className="transition-all hover:text-primary">
-          <Link href="#">Weekly Bundle</Link>
+          <Link href="/">Weekly Bundle</Link>
         </li>
         <li className="transition-all hover:text-primary">
           <Link href="/blog">Blog</Link>

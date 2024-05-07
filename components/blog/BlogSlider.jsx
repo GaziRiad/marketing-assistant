@@ -1,7 +1,6 @@
 import { urlFor } from "@/app/lib/sanity";
 import Image from "next/image";
 import Link from "next/link";
-import { FiLink } from "react-icons/fi";
 
 //
 import {
@@ -23,18 +22,12 @@ function BlogSlider({ posts }) {
               key={post.title}
               className="md:basis-1/2 lg:basis-1/3"
             >
-              <Link
+              <div
                 //  href={`/blog/${post.slug.current}`}
                 href="#"
                 key={post.title}
                 className="relative"
               >
-                {/* <div className="absolute left-0 top-0 hidden h-full w-full  rounded-xl bg-slate-900/60 group-hover:block" />
-                <FiLink
-                  className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 group-hover:block"
-                  size={42}
-                  color="#fff"
-                /> */}
                 <div className="flex flex-col items-center overflow-hidden">
                   <Image
                     height={600}
@@ -46,14 +39,21 @@ function BlogSlider({ posts }) {
                   <p className="-mb-0.5 w-full px-4 text-sm font-semibold uppercase text-primary">
                     Blog Post
                   </p>
-                  <p className="text-black-800 mb-3 w-full px-4 text-left text-lg font-bold capitalize">
+                  <p className="mb-3 w-full px-4 text-left text-lg font-bold capitalize">
                     {`${post.title.substring(0, 35)}${post.title.length > 34 ? "..." : ""}`}
                   </p>
-                  <p className="text-black-800 px-4 text-left text-base">
-                    {`${post.body[0].children[0].text.substring(0, 210)}...`}
+                  <p className="px-4 text-left text-base">
+                    {`${post.body[0].children[0].text.substring(0, 140)}...`}
                   </p>
+                  <Link
+                    href="#"
+                    // to={`/blog/${post.slug.current}`}
+                    className="text-secondary hover:text-secondary-foreground mr-auto mt-auto inline-block cursor-pointer rounded-full px-4 py-2 transition-all"
+                  >
+                    Read more
+                  </Link>
                 </div>
-              </Link>
+              </div>
             </CarouselItem>
           ))}
         </CarouselContent>

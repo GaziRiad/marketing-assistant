@@ -4,6 +4,7 @@
 import { urlFor } from "@/app/lib/sanity";
 import { format } from "date-fns";
 import Image from "next/image";
+import Link from "next/link";
 
 function MainPost({ post }) {
   function printText(body) {
@@ -22,7 +23,7 @@ function MainPost({ post }) {
           width={800}
           src={urlFor(post.mainImage).url()}
           alt={post.mainImage.alt}
-          className="h-[600px] rounded-xl object-cover"
+          className="h-[480px] rounded-xl object-cover lg:h-[600px]"
         />
         <Image
           src="/waveshape.svg"
@@ -53,12 +54,13 @@ function MainPost({ post }) {
           ))}
         </div>
         <div className=" ml-auto mt-4">
-          <button
+          <Link
+            href="#"
             // to={`/blog/${post.slug.current}`}
             className="cursor-pointer rounded-full bg-primary px-4 py-2 text-white transition-all hover:bg-primary/75"
           >
             Read more
-          </button>
+          </Link>
         </div>
       </div>
     </section>
