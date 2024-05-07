@@ -55,8 +55,8 @@ function MainPost({ post }) {
         </div>
         <div className=" ml-auto mt-4">
           <Link
-            href="#"
-            // to={`/blog/${post.slug.current}`}
+            href={`/blog/${post.slug.current}`}
+            target="_blank"
             className="cursor-pointer rounded-full bg-primary px-4 py-2 text-white transition-all hover:bg-primary/75"
           >
             Read more

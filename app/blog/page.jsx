@@ -5,11 +5,13 @@ import Header from "@/components/Header";
 import BlogSlider from "@/components/blog/BlogSlider";
 import Footer from "@/components/Footer";
 import Spinner from "@/components/Spinner";
+import Image from "next/image";
 
 export const serializers = {
   types: {
     // Common block types
     block: ({ node, children }) => {
+      console.log(node);
       switch (node.style) {
         case "h1":
           return (
@@ -42,12 +44,18 @@ export const serializers = {
     },
 
     image: ({ node }) => {
-      return <img src={node.asset.url} className=" mb-4" alt={node.alt} />;
+      return (
+        <Image
+          height={600}
+          width={600}
+          src={node.asset.url}
+          className=" mb-4"
+          alt={node.alt}
+        />
+      );
     },
-    // Add serializers for other custom types as needed
   },
   marks: {
-    // Common mark types
     link: ({ mark, children }) => (
       <a
         href={mark.href}
@@ -60,7 +68,6 @@ export const serializers = {
     ),
     strong: ({ children }) => <strong className="font-bold">{children}</strong>,
     em: ({ children }) => <em className="italic">{children}</em>,
-    // Add serializers for other mark types as needed
   },
 };
 

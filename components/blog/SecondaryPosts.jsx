@@ -8,8 +8,8 @@ function SecondaryPosts({ posts }) {
     <section className="container mx-auto mb-24 flex flex-col items-center justify-center gap-12 px-5 md:flex-row lg:mb-40 lg:gap-24">
       {posts.map((post) => (
         <Link
-          // href={`/blog/${post.slug.current}`}
-          href="#"
+          href={`/blog/${post.slug.current}`}
+          target="_blank"
           key={post.title}
           className="group relative w-full lg:w-1/3"
         >

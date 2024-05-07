@@ -23,8 +23,8 @@ function BlogSlider({ posts }) {
               className="md:basis-1/2 lg:basis-1/3"
             >
               <div
-                //  href={`/blog/${post.slug.current}`}
-                href="#"
+                href={`/blog/${post.slug.current}`}
+                target="_blank"
                 key={post.title}
                 className="relative"
               >
@@ -46,8 +46,8 @@ function BlogSlider({ posts }) {
                     {`${post.body[0].children[0].text.substring(0, 140)}...`}
                   </p>
                   <Link
-                    href="#"
-                    // to={`/blog/${post.slug.current}`}
+                    href={`/blog/${post.slug.current}`}
+                    target="_blank"
                     className="text-secondary hover:text-secondary-foreground mr-auto mt-auto inline-block cursor-pointer rounded-full px-4 py-2 transition-all"
                   >
                     Read more
