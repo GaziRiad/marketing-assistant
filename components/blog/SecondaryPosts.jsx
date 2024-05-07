@@ -5,13 +5,13 @@ import { FiLink } from "react-icons/fi";
 
 function SecondaryPosts({ posts }) {
   return (
-    <section className="container mx-auto mb-24 flex flex-col items-center justify-center gap-12 px-5 md:flex-row lg:mb-40 lg:gap-24">
+    <section className="container relative z-10 mx-auto mb-24 flex flex-col items-center justify-center gap-12 px-5 md:flex-row lg:mb-40 lg:gap-24">
       {posts.map((post) => (
         <Link
           href={`/blog/${post.slug.current}`}
           target="_blank"
           key={post.title}
-          className="group relative w-full lg:w-1/3"
+          className="group relative z-10 w-full lg:w-1/3"
         >
           <div className="absolute left-0 top-0 z-10 hidden h-full w-full  rounded-xl bg-zinc-900/40 group-hover:block" />
           <FiLink
@@ -52,6 +52,13 @@ function SecondaryPosts({ posts }) {
           </div>
         </Link>
       ))}
+      <Image
+        width={500}
+        height={500}
+        src="/svgline.svg"
+        alt="svg"
+        className="absolute -bottom-[160%] right-1/2 hidden w-full translate-x-1/2 2xl:block "
+      />
     </section>
   );
 }

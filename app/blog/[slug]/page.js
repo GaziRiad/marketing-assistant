@@ -39,7 +39,6 @@ async function getPost(slug) {
 }
 
 export async function generateMetadata({ params }, parent) {
-  // read route params
   const { slug } = params;
 
   return {

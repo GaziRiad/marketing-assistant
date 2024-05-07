@@ -16,8 +16,8 @@ function MainPost({ post }) {
     return fullBodyText;
   }
   return (
-    <section className="container mx-auto mb-24 mt-20 flex flex-col items-center justify-between gap-6 px-5 lg:mb-40 lg:flex-row lg:gap-24 lg:px-24">
-      <div className="relative w-full lg:w-1/3">
+    <section className="container relative mx-auto mb-24 mt-20 flex flex-col items-center justify-between gap-6 px-5 lg:mb-40 lg:flex-row lg:gap-24 lg:px-24">
+      <div className="relative z-20 w-full lg:w-1/3">
         <Image
           height={800}
           width={800}
@@ -35,8 +35,15 @@ function MainPost({ post }) {
         <p className="absolute left-0 top-0 z-20 -translate-y-1/2 translate-x-1/2 text-4xl font-bold text-white xl:left-auto xl:right-0 xl:translate-x-1/2">
           Blog
         </p>
+        <Image
+          width={500}
+          height={500}
+          src="/ooorganize.svg"
+          alt="svg"
+          className="absolute -bottom-[10%] -left-[20%] -z-20 w-44"
+        />
       </div>
-      <div className="flex-1">
+      <div className="z-20 flex-1">
         <p className="mb-2 text-3xl font-bold capitalize">
           {`${post.title.substring(0, 35)}${post.title.length > 34 ? "..." : ""}`}
         </p>
@@ -63,6 +70,13 @@ function MainPost({ post }) {
           </Link>
         </div>
       </div>
+      <Image
+        width={500}
+        height={500}
+        src="/svgline.svg"
+        alt="svg"
+        className="absolute -bottom-[10%] right-[6%] z-10 hidden w-full xl:-bottom-[25%] xl:block"
+      />
     </section>
   );
 }
