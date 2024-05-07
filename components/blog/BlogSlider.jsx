@@ -13,7 +13,7 @@ import {
 
 function BlogSlider({ posts }) {
   return (
-    <section className="container relative mx-auto mb-12 flex w-full items-center justify-center px-5 xl:px-16">
+    <section className="container relative mx-auto mb-24 flex w-full items-center justify-center px-5 lg:mb-40 xl:px-16">
       <Carousel className="z-10 w-[80%] md:w-[90%] xl:w-full">
         <CarouselContent>
           {posts.map((post) => (
@@ -59,13 +59,6 @@ function BlogSlider({ posts }) {
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>
-      <Image
-        width={500}
-        height={500}
-        src="/ooorganize.svg"
-        alt="svg"
-        className="absolute -bottom-[25%] -left-[10%] -z-20 w-44"
-      />
     </section>
   );
 }
