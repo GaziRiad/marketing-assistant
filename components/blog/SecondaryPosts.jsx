@@ -5,7 +5,7 @@ import { FiLink } from "react-icons/fi";
 
 function SecondaryPosts({ posts }) {
   return (
-    <section className="container mx-auto mb-56 flex flex-col items-center justify-center gap-12 md:flex-row lg:gap-24">
+    <section className="container mx-auto mb-24 flex flex-col items-center justify-center gap-12 px-5 md:flex-row lg:mb-40 lg:gap-24">
       {posts.map((post) => (
         <Link
           // href={`/blog/${post.slug.current}`}
@@ -43,7 +43,7 @@ function SecondaryPosts({ posts }) {
                 Blog Post
               </p>
               <p className="text-foreground mb-3 w-full text-left text-xl font-bold capitalize">
-                {post.title.substring(0, 30)}
+                {`${post.title.substring(0, 35)}${post.title.length > 34 ? "..." : ""}`}
               </p>
               <p className="text-foreground text-left text-base">
                 {post?.body[0].children[0].text.substring(0, 92) + "..."}

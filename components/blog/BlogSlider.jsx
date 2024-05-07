@@ -15,7 +15,7 @@ import {
 function BlogSlider({ posts }) {
   console.log(posts);
   return (
-    <section className="container mx-auto mb-12 flex w-full items-center justify-center px-4 xl:px-16">
+    <section className="container mx-auto mb-12 flex w-full items-center justify-center px-5 xl:px-16">
       <Carousel className="w-[80%] lg:w-full">
         <CarouselContent>
           {posts.map((post) => (
@@ -35,7 +35,7 @@ function BlogSlider({ posts }) {
                   size={42}
                   color="#fff"
                 /> */}
-                <div className="flex h-[440px] flex-col items-center overflow-hidden lg:h-[520px]">
+                <div className="flex flex-col items-center overflow-hidden">
                   <Image
                     height={600}
                     width={600}
@@ -47,7 +47,7 @@ function BlogSlider({ posts }) {
                     Blog Post
                   </p>
                   <p className="text-black-800 mb-3 w-full px-4 text-left text-lg font-bold capitalize">
-                    {post.title}
+                    {`${post.title.substring(0, 35)}${post.title.length > 34 ? "..." : ""}`}
                   </p>
                   <p className="text-black-800 px-4 text-left text-base">
                     {`${post.body[0].children[0].text.substring(0, 210)}...`}
