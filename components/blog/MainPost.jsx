@@ -75,7 +75,7 @@ function MainPost({ post }) {
         height={500}
         src="/svgline.svg"
         alt="svg"
-        className="absolute -bottom-[10%] right-[6%] z-10 hidden w-full xl:-bottom-[25%] xl:block"
+        className="absolute -bottom-[10%] right-[6%] -z-10 hidden w-full xl:-bottom-[25%] xl:block"
       />
     </section>
   );
