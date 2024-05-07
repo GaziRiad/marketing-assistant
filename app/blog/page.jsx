@@ -4,6 +4,7 @@ import { client } from "../lib/sanity";
 import Header from "@/components/Header";
 import BlogSlider from "@/components/blog/BlogSlider";
 import Footer from "@/components/Footer";
+import Spinner from "@/components/Spinner";
 
 export const serializers = {
   types: {
@@ -74,6 +75,13 @@ async function getPosts() {
 
 async function Blog() {
   const data = await getPosts();
+
+  if (!data)
+    return (
+      <section className="container mx-auto flex items-center justify-center">
+        <Spinner />
+      </section>
+    );
 
   return (
     <>
