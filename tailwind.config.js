@@ -17,6 +17,9 @@ module.exports = {
       },
     },
     extend: {
+      backgroundImage: {
+        footer: "url('/images/messi.jpg')",
+      },
       colors: {
         border: "hsla(var(--border))",
         input: "hsla(var(--input))",

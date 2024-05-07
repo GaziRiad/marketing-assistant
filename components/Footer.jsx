@@ -70,7 +70,15 @@ function Footer() {
         <Link
           href="#"
           className="bg-secondary relative col-start-3 row-span-2 row-start-3 flex items-end justify-start rounded-2xl px-6 py-12 pr-12"
-        ></Link>
+        >
+          <Image
+            height={500}
+            width={500}
+            src="/images/cute.png"
+            alt="cute bear png"
+            className=" absolute bottom-0 left-1/2 z-20 -translate-x-1/2 scale-75"
+          />
+        </Link>
         {/*  */}
         <Link
           href="#"
@@ -100,7 +108,7 @@ function Footer() {
         </Link>
         <Link
           href="#"
-          className="bg-secondary relative col-start-4 row-span-2 row-start-3 flex items-end justify-start rounded-2xl bg-[url('/images/entreprise.png')] px-6 py-12 pr-12"
+          className="bg-secondary bg-footer relative col-start-4 row-span-2 row-start-3 flex w-full items-end justify-start rounded-2xl bg-cover px-6 py-12 pr-12"
         >
           <IoIosAddCircle
             color="#fff"
