@@ -8,14 +8,14 @@ function FooterCards() {
   return (
     <>
       <div className="bg-background container mx-auto flex w-full grid-cols-4 grid-rows-4 flex-wrap gap-2 rounded-3xl p-6 xl:grid xl:gap-8">
-        <div className="row-span-1 rounded-2xl py-4">
+        {/* <div className="row-span-1 rounded-2xl py-4">
           <Image
             src="/images/logotag.png"
             height={300}
             width={300}
             alt="Marketing assistant logo"
           />
-        </div>
+        </div> */}
         <Link
           href="#"
           className="footer-card-shadow group relative col-start-1 row-span-3 flex w-full flex-col items-start justify-end rounded-2xl bg-primary px-6 py-6 pr-12 transition-all xl:gap-2 xl:py-12"
