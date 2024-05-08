@@ -23,7 +23,6 @@ function BlogSlider({ posts }) {
             >
               <div
                 href={`/blog/${post.slug.current}`}
-                target="_blank"
                 key={post.title}
                 className="relative"
               >

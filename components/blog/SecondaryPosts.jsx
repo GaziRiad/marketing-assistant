@@ -9,7 +9,6 @@ function SecondaryPosts({ posts }) {
       {posts.map((post) => (
         <Link
           href={`/blog/${post.slug.current}`}
-          target="_blank"
           key={post.title}
           className="group relative z-10 w-full lg:w-1/3"
         >
