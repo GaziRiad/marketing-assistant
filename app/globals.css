@@ -92,3 +92,13 @@
     transform: rotate(1turn);
   }
 }
+
+.footer-card-shadow:hover {
+  box-shadow: 6px 6px 0px 1px #333;
+}
+
+@media (max-width: 600px) {
+  .footer-card-shadow:hover {
+    box-shadow: 2px 2px 0px 1px #333;
+  }
+}
