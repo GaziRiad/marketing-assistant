@@ -42,7 +42,7 @@ function FooterCards() {
           />
           <p className=" text-xl text-white xl:text-3xl">Design Templates</p>
         </Link>
-        {/* <Link
+        <Link
           href="#"
           className="footer-card-shadow group relative col-start-2 row-span-2 row-start-3 flex w-full items-end justify-start rounded-2xl bg-[#E2E2E2] px-6 py-6 pr-12 transition-all xl:py-12"
         >
@@ -66,7 +66,7 @@ function FooterCards() {
             Guides & Tutorials
           </p>
         </Link>
-        <div
+        {/* <div
           href="#"
           className="bg-secondary relative col-start-3 row-span-2 row-start-3 hidden w-full items-end justify-start rounded-2xl px-6 py-6 pr-12 transition-all xl:flex xl:py-12"
         >
