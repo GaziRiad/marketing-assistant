@@ -16,7 +16,7 @@ function FooterCards() {
             alt="Marketing assistant logo"
           />
         </div>
-        {/* <Link
+        <Link
           href="#"
           className="footer-card-shadow group relative col-start-1 row-span-3 flex w-full flex-col items-start justify-end rounded-2xl bg-primary px-6 py-6 pr-12 transition-all xl:gap-2 xl:py-12"
         >
@@ -31,7 +31,7 @@ function FooterCards() {
             className="-ml-3 scale-75 transition-all group-hover:rotate-45 xl:-ml-2 xl:scale-100"
           />
         </Link>
-        <Link
+        {/* <Link
           href="#"
           className="footer-card-shadow group relative col-start-2 row-span-2 row-start-1 flex w-full items-end justify-start rounded-2xl bg-[#5ACBF0] px-6 py-6 pr-12 transition-all xl:py-12"
         >
