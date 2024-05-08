@@ -102,13 +102,13 @@ function FooterCards() {
       {/* /////////////////////////////////////////////////////////////////////////////////////////////// */}
       {/* /////////////////////////////////////////////////////////////////////////////////////////////// */}
       <div className="bg-background container mx-auto flex w-full flex-wrap gap-2 rounded-3xl p-3 xl:hidden">
-        <div className="group rounded-2xl py-4">
+        <div className="group w-full rounded-2xl py-4">
           <Image
             src="/images/logotag.png"
             height={300}
             width={300}
             alt="Marketing assistant logo"
-            className=" mx-auto w-2/3"
+            className="mx-auto w-2/3"
           />
         </div>
         <Link
