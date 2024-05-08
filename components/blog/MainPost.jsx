@@ -23,7 +23,7 @@ function MainPost({ post }) {
           width={800}
           src={urlFor(post.mainImage).url()}
           alt={post.mainImage.alt}
-          className="h-[480px] rounded-xl object-cover lg:h-[600px]"
+          className="h-[480px] rounded-xl object-cover shadow-md lg:h-[600px]"
         />
         <Image
           src="/waveshape.svg"

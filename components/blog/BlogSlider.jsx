@@ -32,7 +32,7 @@ function BlogSlider({ posts }) {
                     width={600}
                     src={urlFor(post.mainImage).url()}
                     alt={post.mainImage.alt}
-                    className="mb-4 !h-72 rounded-2xl object-cover"
+                    className="mb-4 !h-72 rounded-2xl object-cover shadow-md"
                   />
                   <p className="-mb-0.5 w-full px-4 text-sm font-semibold uppercase text-primary">
                     Blog Post

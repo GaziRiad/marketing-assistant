@@ -18,7 +18,7 @@ function SecondaryPosts({ posts }) {
             size={42}
             color="#fff"
           />
-          <div className="relative overflow-hidden rounded-2xl">
+          <div className="relative overflow-hidden rounded-2xl shadow-md">
             <Image
               height={500}
               width={500}
