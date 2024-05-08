@@ -89,7 +89,7 @@ function FooterCards() {
           />
           <p className=" text-xl text-white xl:text-3xl">Blog & News</p>
         </Link>
-        {/* <Link
+        <Link
           href="#"
           className="bg-secondary bg-footer footer-card-shadow group relative col-start-4 row-span-2 row-start-3 flex w-full w-full items-end justify-start rounded-2xl bg-cover px-6 py-6 pr-12 transition-all xl:py-12"
         >
@@ -101,7 +101,7 @@ function FooterCards() {
           <p className=" text-xl font-extrabold text-white xl:text-3xl">
             ENTERPRISE
           </p>
-        </Link> */}
+        </Link>
       </div>
     </>
   );
