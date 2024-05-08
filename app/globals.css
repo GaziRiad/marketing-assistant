@@ -97,8 +97,8 @@
   box-shadow: 6px 6px 0px 1px #333;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 600px) {
   .footer-card-shadow:hover {
-    box-shadow: none;
+    box-shadow: 2px 2px 0px 1px #333;
   }
 }

@@ -8,7 +8,7 @@ function FooterCards() {
   return (
     <>
       <div className="bg-background container mx-auto flex w-full grid-cols-4 grid-rows-4 flex-wrap gap-2 rounded-3xl p-6 xl:grid xl:gap-8">
-        <div className="group row-span-1 rounded-2xl py-4">
+        <div className="row-span-1 rounded-2xl py-4">
           <Image
             src="/images/logotag.png"
             height={300}
