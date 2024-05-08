@@ -66,7 +66,7 @@ function FooterCards() {
             Guides & Tutorials
           </p>
         </Link>
-        {/* <div
+        <div
           href="#"
           className="bg-secondary relative col-start-3 row-span-2 row-start-3 hidden w-full items-end justify-start rounded-2xl px-6 py-6 pr-12 transition-all xl:flex xl:py-12"
         >
@@ -77,7 +77,7 @@ function FooterCards() {
             alt="cute bear png"
             className="absolute bottom-0 left-1/2 z-20 -translate-x-1/2 scale-75"
           />
-        </div> */}
+        </div>
         <Link
           href="#"
           className="footer-card-shadow group relative col-start-4 row-span-2  row-start-1 flex w-full items-end justify-start rounded-2xl bg-[#5ACBF0] px-6 py-6 pr-12 transition-all xl:py-12"
@@ -89,7 +89,7 @@ function FooterCards() {
           />
           <p className=" text-xl text-white xl:text-3xl">Blog & News</p>
         </Link>
-        <Link
+        {/* <Link
           href="#"
           className="bg-secondary bg-footer footer-card-shadow group relative col-start-4 row-span-2 row-start-3 flex w-full w-full items-end justify-start rounded-2xl bg-cover px-6 py-6 pr-12 transition-all xl:py-12"
         >
@@ -101,7 +101,7 @@ function FooterCards() {
           <p className=" text-xl font-extrabold text-white xl:text-3xl">
             ENTERPRISE
           </p>
-        </Link>
+        </Link> */}
       </div>
     </>
   );
