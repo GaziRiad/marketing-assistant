@@ -4,8 +4,8 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
+    --background: 0 0% 100%; /*WHITE*/
+    --foreground: 240 10% 3.9%; /*BLACK*/
 
     --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;
@@ -13,18 +13,17 @@
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
 
-    --primary: 355, 87%, 66%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 355, 87%, 66%; /*PINK*/
+    --primary-foreground: 0 0% 98%; /*WHITE --> NEED TO BE DARKER PINK*/
 
-    /* --secondary: 240 4.8% 95.9%; */
-    --secondary: 48, 96%, 70%;
-    --secondary-foreground: 48, 99%, 61%;
+    --secondary: 48, 96%, 70%; /*YELLOW*/
+    --secondary-foreground: 48, 99%, 61%; /*DARK YELLOW*/
 
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
 
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 355, 87%, 66%;
+    --accent: 240 4.8% 95.9%; /*LIGHT GREY */
+    --accent-foreground: 355, 87%, 66%; /*PINK */
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
@@ -37,7 +36,7 @@
   }
 
   .dark {
-    --background: 240 10% 3.9%;
+    --background: 240, 6%, 10%;
     --foreground: 0 0% 98%;
 
     --card: 240 10% 3.9%;
@@ -100,4 +99,15 @@
   .footer-card-shadow:hover {
     box-shadow: 2px 2px 0px 1px #333;
   }
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: #fff;
+  background: #222;
+}
+
+::selection {
+  color: #fff;
+  background: #222;
 }

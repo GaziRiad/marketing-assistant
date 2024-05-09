@@ -16,7 +16,7 @@ function MainPost({ post }) {
     return fullBodyText;
   }
   return (
-    <section className="container relative mx-auto mb-24 mt-20 flex flex-col items-center justify-between gap-6 px-5 lg:mb-40 lg:flex-row lg:gap-24 lg:px-24">
+    <section className="container relative mx-auto mb-24 mt-20 flex flex-col items-center justify-between gap-6 px-5 lg:mb-40 lg:mt-40 lg:flex-row lg:gap-24 lg:px-24">
       <div className="relative z-20 w-full lg:w-1/3">
         <Image
           height={800}
