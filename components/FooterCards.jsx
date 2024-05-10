@@ -114,7 +114,7 @@ function FooterCards() {
         </div>
         <Link
           href="#"
-          className="footer-card-shadow group relative col-start-4 row-span-1  row-start-1 flex w-full items-end justify-start rounded-2xl bg-[#5ACBF0] px-6 py-6 pr-12 transition-all xl:py-12"
+          className="footer-card-shadow group relative col-start-4 row-span-2  row-start-1 flex w-full items-end justify-start rounded-2xl bg-[#5ACBF0] px-6 py-6 pr-12 transition-all xl:py-12"
         >
           <IoIosAddCircle
             color="#fff"
@@ -125,7 +125,7 @@ function FooterCards() {
         </Link>
         <Link
           href="#"
-          className="footer-card-shadow group relative col-start-4 row-span-3 row-start-2 flex w-full items-end justify-start rounded-2xl bg-secondary bg-footer bg-cover px-6 py-6 pr-12 transition-all xl:py-12"
+          className="footer-card-shadow group relative col-start-4 row-span-2 row-start-3 flex w-full items-end justify-start rounded-2xl bg-secondary bg-footer bg-cover px-6 py-6 pr-12 transition-all xl:py-12"
         >
           <IoIosAddCircle
             color="#F45B69"
