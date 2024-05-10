@@ -14,22 +14,6 @@ gsap.registerPlugin(ScrollTrigger);
 function FooterCards() {
   const sectionRef = useRef();
 
-  // useEffect(() => {
-  //   if (sectionRef.current) {
-  //     ScrollTrigger.create({
-  //       trigger: sectionRef.current,
-  //       start: "top bottom",
-  //       end: "bottom top",
-  //       onEnter: () =>
-  //         gsap.fromTo(
-  //           sectionRef.current,
-  //           { opacity: 0, y: +200 },
-  //           { opacity: 1, y: 0, duration: 1 },
-  //         ),
-  //     });
-  //   }
-  // }, []);
-
   useEffect(() => {
     const boxes = sectionRef.current.children;
 
@@ -58,7 +42,7 @@ function FooterCards() {
         ref={sectionRef}
         className="container mx-auto flex flex-grow grid-cols-4 grid-rows-4 flex-wrap gap-2 rounded-3xl bg-background p-6 xl:grid xl:gap-8"
       >
-        <div className="row-span-1 rounded-2xl py-4 ">
+        <div className="row-span-1 rounded-2xl py-4">
           <Image
             src="/images/logotag.png"
             height={300}
@@ -130,7 +114,7 @@ function FooterCards() {
         </div>
         <Link
           href="#"
-          className="footer-card-shadow group relative col-start-4 row-span-2  row-start-1 flex w-full items-end justify-start rounded-2xl bg-[#5ACBF0] px-6 py-6 pr-12 transition-all xl:py-12"
+          className="footer-card-shadow group relative col-start-4 row-span-1  row-start-1 flex w-full items-end justify-start rounded-2xl bg-[#5ACBF0] px-6 py-6 pr-12 transition-all xl:py-12"
         >
           <IoIosAddCircle
             color="#fff"
@@ -141,14 +125,14 @@ function FooterCards() {
         </Link>
         <Link
           href="#"
-          className="footer-card-shadow group relative col-start-4 row-span-2 row-start-3 flex w-full w-full items-end justify-start rounded-2xl bg-secondary bg-footer bg-cover px-6 py-6 pr-12 transition-all xl:py-12"
+          className="footer-card-shadow group relative col-start-4 row-span-3 row-start-2 flex w-full items-end justify-start rounded-2xl bg-secondary bg-footer bg-cover px-6 py-6 pr-12 transition-all xl:py-12"
         >
           <IoIosAddCircle
             color="#F45B69"
             size={36}
-            className=" absolute right-4 top-4 transition-all group-hover:rotate-45"
+            className="absolute right-4 top-4 transition-all group-hover:rotate-45"
           />
-          <p className=" text-xl font-extrabold text-white xl:text-3xl">
+          <p className="text-xl font-extrabold text-white xl:text-3xl">
             ENTERPRISE
           </p>
         </Link>
