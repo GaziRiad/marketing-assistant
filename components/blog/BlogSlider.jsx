@@ -43,7 +43,7 @@ function BlogSlider({ posts }) {
   return (
     <section
       ref={sectionRef}
-      className="container relative mx-auto mb-24 flex w-full items-center justify-center px-5 opacity-0 lg:mb-40 xl:px-16"
+      className="container relative z-50 mx-auto mb-24 flex w-full items-center justify-center px-5 opacity-0 lg:mb-40 xl:px-16"
     >
       <Carousel className="z-10 w-[80%] md:w-[90%] xl:w-full">
         <CarouselContent>
