@@ -125,7 +125,7 @@ function FooterCards() {
             width={500}
             src="/images/Cuteicon.svg"
             alt="cute bear png"
-            className="absolute -bottom-[25%] left-1/2 z-20 -translate-x-1/2 "
+            className="absolute -bottom-0 left-1/2 z-20 -translate-x-1/2 "
           />
         </div>
         <Link
