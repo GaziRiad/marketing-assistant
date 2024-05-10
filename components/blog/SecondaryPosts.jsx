@@ -34,7 +34,7 @@ function SecondaryPosts({ posts }) {
   return (
     <section
       ref={sectionRef}
-      className="container relative z-10 mx-auto mb-24 flex flex-col items-center justify-center gap-12 px-5 md:flex-row lg:mb-40 lg:gap-24"
+      className="container relative z-10 mx-auto mb-24 flex flex-col items-center justify-center gap-12 px-5 opacity-0 md:flex-row lg:mb-40 lg:gap-24"
     >
       {posts.map((post) => (
         <Link
