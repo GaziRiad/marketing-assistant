@@ -144,7 +144,7 @@ function FooterCards() {
           className="footer-card-shadow group relative col-start-4 row-span-2 row-start-3 flex w-full w-full items-end justify-start rounded-2xl bg-secondary bg-footer bg-cover px-6 py-6 pr-12 transition-all xl:py-12"
         >
           <IoIosAddCircle
-            color="#fff"
+            color="#F45B69"
             size={36}
             className=" absolute right-4 top-4 transition-all group-hover:rotate-45"
           />
