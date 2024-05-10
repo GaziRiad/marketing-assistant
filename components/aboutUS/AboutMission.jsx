@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function AboutMission() {
   return (
-    <section className="container mx-auto mb-24 px-5 py-24 lg:mb-40">
+    <section className="container mx-auto mb-24 px-5 lg:mb-40">
       <article className="flex items-center justify-between gap-24">
         <div className="relative w-[25%]">
           <Image

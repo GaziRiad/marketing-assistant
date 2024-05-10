@@ -1,11 +1,41 @@
+"use client";
+
 import { urlFor } from "@/app/lib/sanity";
 import Image from "next/image";
 import Link from "next/link";
 import { FiLink } from "react-icons/fi";
 
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import { useEffect, useRef } from "react";
+gsap.registerPlugin(ScrollTrigger);
+
 function SecondaryPosts({ posts }) {
+  const sectionRef = useRef();
+
+  useEffect(() => {
+    // Ensure your elements exist
+    if (sectionRef.current) {
+      // Use the ScrollTrigger.create static method to set up the animation
+      ScrollTrigger.create({
+        trigger: sectionRef.current, // Reference to your DOM element
+        start: "top bottom",
+        end: "bottom top",
+        onEnter: () =>
+          gsap.fromTo(
+            sectionRef.current,
+            { opacity: 0, y: +200 },
+            { opacity: 1, y: 0, duration: 1 },
+          ),
+      });
+    }
+  }, []);
+
   return (
-    <section className="container relative z-10 mx-auto mb-24 flex flex-col items-center justify-center gap-12 px-5 md:flex-row lg:mb-40 lg:gap-24">
+    <section
+      ref={sectionRef}
+      className="container relative z-10 mx-auto mb-24 flex flex-col items-center justify-center gap-12 px-5 md:flex-row lg:mb-40 lg:gap-24"
+    >
       {posts.map((post) => (
         <Link
           href={`/blog/${post.slug.current}`}
@@ -41,10 +71,10 @@ function SecondaryPosts({ posts }) {
               <p className="-mb-0.5 text-sm font-semibold uppercase text-primary">
                 Blog Post
               </p>
-              <p className="text-foreground mb-3 w-full text-left text-xl font-bold capitalize">
+              <p className="mb-3 w-full text-left text-xl font-bold capitalize text-foreground">
                 {`${post.title.substring(0, 35)}${post.title.length > 34 ? "..." : ""}`}
               </p>
-              <p className="text-foreground text-left text-base">
+              <p className="text-left text-base text-foreground">
                 {post?.body[0].children[0].text.substring(0, 92) + "..."}
               </p>
             </div>

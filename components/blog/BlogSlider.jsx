@@ -1,3 +1,5 @@
+"use client";
+
 import { urlFor } from "@/app/lib/sanity";
 import Image from "next/image";
 import Link from "next/link";
@@ -11,9 +13,38 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import { useEffect, useRef } from "react";
+
+gsap.registerPlugin(ScrollTrigger);
+
 function BlogSlider({ posts }) {
+  const sectionRef = useRef();
+
+  useEffect(() => {
+    // Ensure your elements exist
+    if (sectionRef.current) {
+      // Use the ScrollTrigger.create static method to set up the animation
+      ScrollTrigger.create({
+        trigger: sectionRef.current, // Reference to your DOM element
+        start: "top bottom",
+        end: "bottom top",
+        onEnter: () =>
+          gsap.fromTo(
+            sectionRef.current,
+            { opacity: 0, y: +200 },
+            { opacity: 1, y: 0, duration: 1 },
+          ),
+      });
+    }
+  }, []);
+
   return (
-    <section className="container relative mx-auto mb-24 flex w-full items-center justify-center px-5 lg:mb-40 xl:px-16">
+    <section
+      ref={sectionRef}
+      className="container relative mx-auto mb-24 flex w-full items-center justify-center px-5 lg:mb-40 xl:px-16"
+    >
       <Carousel className="z-10 w-[80%] md:w-[90%] xl:w-full">
         <CarouselContent>
           {posts.map((post) => (
@@ -46,7 +77,7 @@ function BlogSlider({ posts }) {
                   <Link
                     href={`/blog/${post.slug.current}`}
                     target="_blank"
-                    className="text-secondary hover:text-secondary-foreground mr-auto mt-auto inline-block cursor-pointer rounded-full px-4 py-2 transition-all"
+                    className="mr-auto mt-auto inline-block cursor-pointer rounded-full px-4 py-2 text-secondary transition-all hover:text-secondary-foreground"
                   >
                     Read more
                   </Link>

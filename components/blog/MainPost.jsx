@@ -1,12 +1,50 @@
-// import { format } from "date-fns";
-// import SanityBlockContent from "@sanity/block-content-to-react";
+"use client";
 
 import { urlFor } from "@/app/lib/sanity";
 import { format } from "date-fns";
 import Image from "next/image";
 import Link from "next/link";
 
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import { useEffect, useRef } from "react";
+gsap.registerPlugin(ScrollTrigger);
+
 function MainPost({ post }) {
+  const imageRef = useRef();
+  const textRef = useRef();
+
+  useEffect(() => {
+    // Ensure your elements exist
+    if (imageRef.current) {
+      // Use the ScrollTrigger.create static method to set up the animation
+      ScrollTrigger.create({
+        trigger: imageRef.current, // Reference to your DOM element
+        start: "top bottom",
+        end: "bottom top",
+        onEnter: () =>
+          gsap.fromTo(
+            imageRef.current,
+            { opacity: 0, x: -200 },
+            { opacity: 1, x: 0, duration: 1 },
+          ),
+      });
+    }
+    if (textRef.current) {
+      ScrollTrigger.create({
+        trigger: textRef.current,
+        start: "top bottom",
+        end: "bottom top",
+        onEnter: () =>
+          gsap.fromTo(
+            textRef.current,
+            { opacity: 0, x: +200 },
+            { opacity: 1, x: 0, duration: 1 },
+          ),
+      });
+    }
+  }, []);
+
   function printText(body) {
     let fullBodyText = "";
     body
@@ -17,7 +55,7 @@ function MainPost({ post }) {
   }
   return (
     <section className="container relative mx-auto mb-24 mt-20 flex flex-col items-center justify-between gap-6 px-5 lg:mb-40 lg:mt-40 lg:flex-row lg:gap-24 lg:px-24">
-      <div className="relative z-20 w-full lg:w-1/3">
+      <div className="relative z-20 w-full lg:w-1/3" ref={imageRef}>
         <Image
           height={800}
           width={800}
@@ -43,7 +81,7 @@ function MainPost({ post }) {
           className="absolute -bottom-[10%] -left-[20%] -z-20 w-44"
         />
       </div>
-      <div className="z-20 flex-1">
+      <div className="z-20 flex-1" ref={textRef}>
         <p className="mb-2 text-3xl font-bold capitalize">
           {`${post.title.substring(0, 35)}${post.title.length > 34 ? "..." : ""}`}
         </p>

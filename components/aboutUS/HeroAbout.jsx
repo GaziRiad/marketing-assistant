@@ -25,6 +25,7 @@ function HeroAbout() {
           “Making marketing easier than ever in the smoothest way possible.”
         </p>
       </div>
+      <Image src="/images/ABOUT.png" height={500} width={500} alt="about png" />
     </section>
   );
 }

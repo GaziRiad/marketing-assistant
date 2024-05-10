@@ -1,14 +1,64 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 
 import { IoIosAddCircle } from "react-icons/io";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
 
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import { useEffect, useRef } from "react";
+gsap.registerPlugin(ScrollTrigger);
+
 function FooterCards() {
+  const sectionRef = useRef();
+
+  // useEffect(() => {
+  //   if (sectionRef.current) {
+  //     ScrollTrigger.create({
+  //       trigger: sectionRef.current,
+  //       start: "top bottom",
+  //       end: "bottom top",
+  //       onEnter: () =>
+  //         gsap.fromTo(
+  //           sectionRef.current,
+  //           { opacity: 0, y: +200 },
+  //           { opacity: 1, y: 0, duration: 1 },
+  //         ),
+  //     });
+  //   }
+  // }, []);
+
+  useEffect(() => {
+    const boxes = sectionRef.current.children;
+
+    gsap.fromTo(
+      boxes,
+      { autoAlpha: 0 }, // from state
+      {
+        // to state
+        autoAlpha: 1,
+        duration: 1,
+        stagger: 0.1, // Delay between the start of each animation
+        ease: "power2.inOut",
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top bottom",
+          end: "bottom top",
+          toggleActions: "play none none none",
+        },
+      },
+    );
+  }, []);
+
   return (
     <>
-      <div className="bg-background container mx-auto flex w-full flex-grow grid-cols-4 grid-rows-4 flex-wrap gap-2 rounded-3xl p-6 xl:grid xl:gap-8">
-        <div className="row-span-1 rounded-2xl py-4">
+      <div
+        ref={sectionRef}
+        className="container mx-auto flex w-full flex-grow grid-cols-4 grid-rows-4 flex-wrap gap-2 rounded-3xl bg-background p-6 xl:grid xl:gap-8"
+      >
+        <div className="row-span-1 rounded-2xl py-4 ">
           <Image
             src="/images/logotag.png"
             height={300}
@@ -51,7 +101,7 @@ function FooterCards() {
             size={36}
             className=" absolute right-4 top-4 transition-all group-hover:rotate-45"
           />
-          <p className=" text-foreground text-xl xl:text-3xl">Copy Templates</p>
+          <p className=" text-xl text-foreground xl:text-3xl">Copy Templates</p>
         </Link>
         <Link
           href="#"
@@ -62,13 +112,13 @@ function FooterCards() {
             size={36}
             className=" absolute right-4 top-4 transition-all group-hover:rotate-45"
           />
-          <p className=" text-foreground text-xl xl:text-3xl">
+          <p className=" text-xl text-foreground xl:text-3xl">
             Guides & Tutorials
           </p>
         </Link>
         <div
           href="#"
-          className="bg-secondary relative col-start-3 row-span-2 row-start-3 hidden w-full items-end justify-start rounded-2xl px-6 py-6 pr-12 transition-all xl:flex xl:py-12"
+          className="relative col-start-3 row-span-2 row-start-3 hidden w-full items-end justify-start rounded-2xl bg-secondary px-6 py-6 pr-12 transition-all xl:flex xl:py-12"
         >
           <Image
             height={500}
@@ -91,7 +141,7 @@ function FooterCards() {
         </Link>
         <Link
           href="#"
-          className="bg-secondary bg-footer footer-card-shadow group relative col-start-4 row-span-2 row-start-3 flex w-full w-full items-end justify-start rounded-2xl bg-cover px-6 py-6 pr-12 transition-all xl:py-12"
+          className="footer-card-shadow group relative col-start-4 row-span-2 row-start-3 flex w-full w-full items-end justify-start rounded-2xl bg-secondary bg-footer bg-cover px-6 py-6 pr-12 transition-all xl:py-12"
         >
           <IoIosAddCircle
             color="#fff"

@@ -1,6 +1,6 @@
 function AboutBanner() {
   return (
-    <section className="bg-secondary py-12">
+    <section className="bg-secondary mb-24 py-12 lg:mb-40">
       <div className="container mx-auto flex flex-col items-center justify-center gap-10">
         <p className="text-4xl font-bold text-[#393E41]">
           We solve problems by applying the fundamental engineering law:
