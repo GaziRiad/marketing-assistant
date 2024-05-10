@@ -26,7 +26,7 @@ function MainPost({ post }) {
           gsap.fromTo(
             imageRef.current,
             { opacity: 0, x: -200 },
-            { opacity: 1, x: 0, duration: 1 },
+            { opacity: 1, x: 0, duration: 0.6, ease: "power1.inOut" },
           ),
       });
     }
@@ -39,7 +39,7 @@ function MainPost({ post }) {
           gsap.fromTo(
             textRef.current,
             { opacity: 0, x: +200 },
-            { opacity: 1, x: 0, duration: 1 },
+            { opacity: 1, x: 0, duration: 0.6, ease: "power1.inOut" },
           ),
       });
     }
@@ -55,7 +55,7 @@ function MainPost({ post }) {
   }
   return (
     <section className="container relative mx-auto mb-24 mt-20 flex flex-col items-center justify-between gap-6 px-5 lg:mb-40 lg:mt-40 lg:flex-row lg:gap-24 lg:px-24">
-      <div className="relative z-20 w-full lg:w-1/3" ref={imageRef}>
+      <div className="relative z-20 w-full opacity-0 lg:w-1/3" ref={imageRef}>
         <Image
           height={800}
           width={800}
@@ -81,7 +81,7 @@ function MainPost({ post }) {
           className="absolute -bottom-[10%] -left-[20%] -z-20 w-44"
         />
       </div>
-      <div className="z-20 flex-1" ref={textRef}>
+      <div className="z-20 flex-1 opacity-0" ref={textRef}>
         <p className="mb-2 text-3xl font-bold capitalize">
           {`${post.title.substring(0, 35)}${post.title.length > 34 ? "..." : ""}`}
         </p>

@@ -39,9 +39,9 @@ function FooterCards() {
       {
         // to state
         autoAlpha: 1,
-        duration: 1,
+        duration: 0.6,
         stagger: 0.1, // Delay between the start of each animation
-        ease: "power2.inOut",
+        ease: "power1.inOut",
         scrollTrigger: {
           trigger: sectionRef.current,
           start: "top bottom",
