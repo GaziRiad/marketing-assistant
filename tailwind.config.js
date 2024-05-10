@@ -17,6 +17,9 @@ module.exports = {
       },
     },
     extend: {
+      screens: {
+        "3xl": "1600px",
+      },
       backgroundImage: {
         footer: "url('/images/entreprise.svg')",
       },

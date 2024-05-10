@@ -56,7 +56,7 @@ function FooterCards() {
     <>
       <div
         ref={sectionRef}
-        className="container mx-auto flex w-full flex-grow grid-cols-4 grid-rows-4 flex-wrap gap-2 rounded-3xl bg-background p-6 xl:grid xl:gap-8"
+        className="container mx-auto flex flex-grow grid-cols-4 grid-rows-4 flex-wrap gap-2 rounded-3xl bg-background p-6 xl:grid xl:gap-8"
       >
         <div className="row-span-1 rounded-2xl py-4 ">
           <Image

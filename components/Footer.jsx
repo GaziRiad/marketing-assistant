@@ -3,7 +3,7 @@ import FooterCards from "./FooterCards";
 
 function Footer() {
   return (
-    <footer className="relative bg-secondary px-5 py-12 ">
+    <footer className="3xl:px-80 relative bg-secondary px-5 py-12 xl:px-40">
       <FooterCards />
       <Image
         width={500}
