@@ -1,7 +1,9 @@
 import Footer from "@/components/Footer";
+import SubscribeSection from "@/components/SubscribeSection";
 import AboutBanner from "@/components/aboutUS/AboutBanner";
 import AboutMission from "@/components/aboutUS/AboutMission";
 import HeroAbout from "@/components/aboutUS/HeroAbout";
+import TeamSection from "@/components/aboutUS/TeamSection";
 
 function About() {
   return (
@@ -9,6 +11,8 @@ function About() {
       <HeroAbout />
       <AboutBanner />
       <AboutMission />
+      <TeamSection />
+      <SubscribeSection />
       <Footer />
     </>
   );

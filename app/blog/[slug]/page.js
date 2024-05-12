@@ -53,7 +53,7 @@ async function page({ params }) {
 
   return (
     <>
-      <section className="mx-auto -mt-20 mb-24 max-w-5xl px-4 lg:mb-40 ">
+      <section className="mx-auto -mt-6 mb-24 max-w-5xl px-4 lg:mb-40 ">
         <article className="mb-12 text-black">
           <p className="mb-8 text-center text-2xl font-bold md:text-3xl lg:text-5xl">
             {singlePost.title}
