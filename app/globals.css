@@ -101,8 +101,7 @@
   }
 }
 
-::-moz-selection {
-  /* Code for Firefox */
+/* ::-moz-selection {
   color: #fff;
   background: #222;
 }
@@ -110,4 +109,4 @@
 ::selection {
   color: #fff;
   background: #222;
-}
+} */

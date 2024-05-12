@@ -3,27 +3,41 @@ import Image from "next/image";
 function AboutMission() {
   return (
     <section className="container mx-auto mb-24 px-5 lg:mb-40">
-      <article className="flex items-center justify-between gap-24">
-        <div className="relative w-[25%]">
+      <article className="flex flex-col items-center justify-between gap-8 lg:flex-row lg:gap-24">
+        <div className="relative w-full lg:w-[25%]">
+          <div className="mb-6 flex items-center justify-start lg:hidden">
+            <Image
+              src="/waveshape.svg"
+              height={200}
+              width={200}
+              alt="wave img"
+              className="z-10 inline-block w-24 xl:left-auto xl:right-0 xl:translate-x-1/2"
+            />
+            <p className="z-20 -ml-20 inline-block text-4xl font-bold text-white dark:text-primary xl:-right-20 xl:left-auto xl:translate-x-1/2">
+              Our <span className=" ml-2 text-primary"> Mission</span>
+            </p>
+          </div>
+
+          {/*  */}
           <Image
             src="/images/messi.jpg"
             width={600}
             height={600}
             alt="Marketing assistant mission image"
-            className="h-[480px] rounded-2xl object-cover"
+            className="mx-auto h-[480px] rounded-2xl object-cover"
           />
           <Image
             src="/waveshape.svg"
             height={200}
             width={200}
             alt="wave img"
-            className="absolute left-0 top-0 z-10 -translate-x-[10%] -translate-y-1/2 scale-50 xl:left-auto xl:right-0 xl:translate-x-1/2"
+            className="absolute left-auto right-0 top-0 z-10 hidden -translate-y-1/2 translate-x-1/2 scale-50 lg:block"
           />
-          <p className="absolute left-0 top-0 z-20 -translate-y-1/2 translate-x-1/2 text-4xl font-bold text-white xl:-right-20 xl:left-auto xl:translate-x-1/2 dark:text-primary">
+          <p className="absolute -right-20 left-auto top-0 z-20 hidden -translate-y-1/2 translate-x-1/2 text-4xl font-bold text-white dark:text-primary lg:block">
             Our <span className=" text-primary"> Mission</span>
           </p>
         </div>
-        <div className=" flex flex-1 flex-col gap-4 text-xl leading-8">
+        <div className=" flex flex-1 flex-col gap-4 text-lg leading-8 lg:text-xl">
           <p>
             Our mission is to champion small business owners by providing them
             with the digital marketing tools and knowledge necessary for success
