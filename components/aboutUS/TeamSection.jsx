@@ -8,9 +8,9 @@ function TeamSection() {
       <Image
         width={200}
         height={200}
-        src="/waves.svg"
+        src="/radio-wave.svg"
         alt="svg"
-        className="absolute left-0 top-1/2 -z-20 w-full -translate-y-1/2"
+        className="absolute left-0 top-1/2 -z-20 w-full -translate-y-1/2 lg:scale-[35%]"
       />
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-center">
@@ -25,7 +25,7 @@ function TeamSection() {
             </p>
           </h2>
           <Image
-            src="/images/owner.png"
+            src="/images/owner.svg"
             height={320}
             width={320}
             alt="picture of Jeanette Kramer"

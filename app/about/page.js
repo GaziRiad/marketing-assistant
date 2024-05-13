@@ -5,6 +5,10 @@ import AboutMission from "@/components/aboutUS/AboutMission";
 import HeroAbout from "@/components/aboutUS/HeroAbout";
 import TeamSection from "@/components/aboutUS/TeamSection";
 
+export const metadata = {
+  title: "About US",
+};
+
 function About() {
   return (
     <>

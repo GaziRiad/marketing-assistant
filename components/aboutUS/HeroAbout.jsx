@@ -25,9 +25,9 @@ function HeroAbout() {
         </p>
       </div>
       <Image
-        src="/images/ABOUT.png"
-        height={500}
-        width={500}
+        src="/mountain.svg"
+        height={400}
+        width={400}
         alt="about png"
         className="lg-translate-x-1/4 absolute bottom-0 left-1/2 -translate-x-1/2 scale-75 lg:mb-8 lg:scale-100"
       />
