@@ -20,7 +20,7 @@ function AboutMission() {
 
           {/*  */}
           <Image
-            src="/images/messi.jpg"
+            src="/images/woman-about.jpg"
             width={600}
             height={600}
             alt="Marketing assistant mission image"

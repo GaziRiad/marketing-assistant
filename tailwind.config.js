@@ -21,7 +21,7 @@ module.exports = {
         "3xl": "1600px",
       },
       backgroundImage: {
-        footer: "url('/images/entreprise.svg')",
+        footer: "url('/images/entreprise.jpg')",
       },
       colors: {
         border: "hsla(var(--border))",

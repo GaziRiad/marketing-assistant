@@ -76,7 +76,7 @@ function MainPost({ post }) {
         <Image
           width={500}
           height={500}
-          src="/ooorganize.svg"
+          src="/blob.svg"
           alt="svg"
           className="absolute -bottom-[10%] -left-[20%] -z-20 w-44"
         />

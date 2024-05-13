@@ -8,7 +8,7 @@ function TeamSection() {
       <Image
         width={200}
         height={200}
-        src="/radio-wave.svg"
+        src="/about-wave.svg"
         alt="svg"
         className="absolute left-0 top-1/2 -z-20 w-full -translate-y-1/2 lg:scale-[35%]"
       />
@@ -25,7 +25,7 @@ function TeamSection() {
             </p>
           </h2>
           <Image
-            src="/images/owner.svg"
+            src="/images/owner.webP"
             height={320}
             width={320}
             alt="picture of Jeanette Kramer"
