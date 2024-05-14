@@ -23,6 +23,7 @@ function MainPost({ post }) {
         toggleActions: "play none none none", // Actions: onEnter, onLeave, onEnterBack, onLeaveBack
         start: "top bottom",
         end: "bottom top",
+        scrub: true,
         onEnter: () =>
           gsap.fromTo(
             imageRef.current,

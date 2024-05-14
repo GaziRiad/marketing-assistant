@@ -31,10 +31,11 @@ function BlogSlider({ posts }) {
         toggleActions: "play none none none", // Actions: onEnter, onLeave, onEnterBack, onLeaveBack
         start: "top bottom",
         end: "bottom top",
+        scrub: true,
         onEnter: () =>
           gsap.fromTo(
             sectionRef.current,
-            { opacity: 0, y: +200 },
+            { opacity: 0, y: +120 },
             { opacity: 1, y: 0, duration: 1 },
           ),
       });

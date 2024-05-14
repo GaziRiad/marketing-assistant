@@ -36,7 +36,7 @@ function SubscribeSection() {
   }, []);
 
   return (
-    <section className="mb-24 text-3xl lg:mb-40 lg:text-5xl">
+    <section className="mb-24 max-h-screen text-3xl lg:mb-40 lg:text-5xl">
       <Link
         ref={sectionRef}
         href="#"
