@@ -8,14 +8,14 @@ function HeroAbout() {
         height={400}
         width={400}
         alt="My marketing assistant about us page hero shape"
-        className="absolute -left-[10%] top-0 w-36 rotate-[22deg] md:w-64 xl:w-96"
+        className="absolute -left-[10%] top-0 -z-10 w-36 rotate-[22deg] md:w-64 xl:w-96"
       />
       <Image
         src="/blue-triangle.svg"
         height={400}
         width={400}
         alt="My marketing assistant about us page hero shape"
-        className="absolute -right-[12%] top-[20%] w-36 rotate-[22deg] md:w-64 lg:top-0 xl:w-96"
+        className="absolute -right-[12%] top-[20%] -z-10 w-36 rotate-[22deg] md:w-64 lg:top-0 xl:w-96"
       />
 
       <Image
