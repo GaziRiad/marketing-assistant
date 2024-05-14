@@ -18,6 +18,7 @@ function TeamSection() {
       // Use the ScrollTrigger.create static method to set up the animation
       ScrollTrigger.create({
         trigger: imgRef.current, // Reference to your DOM element
+        toggleActions: "play none none none", // Actions: onEnter, onLeave, onEnterBack, onLeaveBack
         start: "top bottom",
         end: "bottom top",
         onEnter: () =>
@@ -39,6 +40,13 @@ function TeamSection() {
           ),
       });
     }
+
+    // Return a cleanup function from the `useEffect` hook
+    return () => {
+      // ScrollTrigger provides a method to clear associated instances
+      // This is how you can kill ScrollTriggers specifically
+      ScrollTrigger.getAll().forEach((instance) => instance.kill());
+    };
   }, []);
 
   return (
@@ -51,13 +59,13 @@ function TeamSection() {
         className="absolute left-0 top-1/2 -z-20 w-full -translate-y-1/2 lg:scale-[35%]"
       />
       <div className="flex flex-col items-center justify-center">
-        <h2 className=" mb-4 text-center">
+        <h2 className=" font-spartan mb-4 text-center">
           <p className="mb-1 text-xl font-bold text-[#393E41]">Created by</p>
-          <p className=" text-4xl font-bold text-primary">
+          <p className=" text-4xl font-extrabold text-primary">
             Small Business Owner
           </p>
           <p className="mb-1 text-xl font-bold text-[#393E41]">for</p>
-          <p className=" text-4xl font-bold text-primary underline underline-offset-4">
+          <p className=" text-4xl font-extrabold text-primary underline underline-offset-4">
             Small Business Owner
           </p>
         </h2>

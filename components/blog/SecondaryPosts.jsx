@@ -19,6 +19,7 @@ function SecondaryPosts({ posts }) {
       // Use the ScrollTrigger.create static method to set up the animation
       ScrollTrigger.create({
         trigger: sectionRef.current, // Reference to your DOM element
+        toggleActions: "play none none none", // Actions: onEnter, onLeave, onEnterBack, onLeaveBack
         start: "top bottom",
         end: "bottom top",
         onEnter: () =>

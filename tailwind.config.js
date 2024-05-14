@@ -17,6 +17,10 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        main: "Poppins, sans-serif",
+        spartan: "League Spartan, sans-serif",
+      },
       screens: {
         "3xl": "1600px",
       },

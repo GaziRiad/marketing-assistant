@@ -20,6 +20,7 @@ function MainPost({ post }) {
       // Use the ScrollTrigger.create static method to set up the animation
       ScrollTrigger.create({
         trigger: imageRef.current, // Reference to your DOM element
+        toggleActions: "play none none none", // Actions: onEnter, onLeave, onEnterBack, onLeaveBack
         start: "top bottom",
         end: "bottom top",
         onEnter: () =>
@@ -70,7 +71,7 @@ function MainPost({ post }) {
           alt="wave img"
           className="absolute left-0 top-0 z-10 -translate-x-[10%] -translate-y-1/2 scale-75 xl:left-auto xl:right-0 xl:translate-x-1/2"
         />
-        <p className="absolute left-0 top-0 z-20 -translate-y-1/2 translate-x-1/2 text-4xl font-bold text-white xl:left-auto xl:right-0 xl:translate-x-1/2">
+        <p className="font-spartan absolute left-0 top-0 z-20 -translate-y-1/2 translate-x-1/2 text-4xl font-bold text-white xl:left-auto xl:right-0 xl:translate-x-1/2">
           Blog
         </p>
         <Image

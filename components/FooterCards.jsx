@@ -40,7 +40,7 @@ function FooterCards() {
     <>
       <div
         ref={sectionRef}
-        className="container mx-auto flex flex-grow grid-cols-4 grid-rows-4 flex-wrap gap-2 rounded-3xl bg-background p-6 xl:grid xl:gap-8"
+        className="font-spartan container mx-auto flex flex-grow grid-cols-4 grid-rows-4 flex-wrap gap-2 rounded-3xl bg-background p-6 xl:grid xl:gap-8"
       >
         <div className="row-span-1 rounded-2xl py-4">
           <Image
@@ -132,9 +132,7 @@ function FooterCards() {
             size={36}
             className="absolute right-4 top-4 transition-all group-hover:rotate-45"
           />
-          <p className="text-xl font-extrabold text-white xl:text-3xl">
-            ENTERPRISE
-          </p>
+          <p className="text-xl font-bold text-white xl:text-3xl">ENTERPRISE</p>
         </Link>
       </div>
     </>

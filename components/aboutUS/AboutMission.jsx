@@ -15,20 +15,31 @@ function AboutMission() {
       // Use the ScrollTrigger.create static method to set up the animation
       ScrollTrigger.create({
         trigger: sectionRef.current, // Reference to your DOM element
+        toggleActions: "play none none none", // Actions: onEnter, onLeave, onEnterBack, onLeaveBack
         start: "top bottom",
         end: "bottom top",
         onEnter: () =>
           gsap.fromTo(
             sectionRef.current,
             { opacity: 0, y: +120 },
-            { opacity: 1, y: 0, duration: 1 },
+            { opacity: 1, duration: 1, y: 0 },
           ),
       });
     }
+
+    // Return a cleanup function from the `useEffect` hook
+    return () => {
+      // ScrollTrigger provides a method to clear associated instances
+      // This is how you can kill ScrollTriggers specifically
+      ScrollTrigger.getAll().forEach((instance) => instance.kill());
+    };
   }, []);
 
   return (
-    <section className="container mx-auto mb-24 px-5 lg:mb-40" ref={sectionRef}>
+    <section
+      className="container mx-auto mb-24 px-5 opacity-0 lg:mb-40"
+      ref={sectionRef}
+    >
       <article className="flex flex-col items-center justify-between gap-8 lg:flex-row lg:gap-24">
         <div className="relative w-full lg:w-[25%]">
           <div className="mb-6 flex items-center justify-start lg:hidden">
@@ -39,12 +50,11 @@ function AboutMission() {
               alt="wave img"
               className="z-10 inline-block w-24 xl:left-auto xl:right-0 xl:translate-x-1/2"
             />
-            <p className="z-20 -ml-20 inline-block text-4xl font-bold text-white dark:text-primary xl:-right-20 xl:left-auto xl:translate-x-1/2">
+            <p className="font-spartan z-20 -ml-20 inline-block text-4xl font-bold text-white dark:text-primary xl:-right-20 xl:left-auto xl:translate-x-1/2">
               Our <span className=" ml-2 text-primary"> Mission</span>
             </p>
           </div>
 
-          {/*  */}
           <Image
             src="/images/woman-about.jpg"
             width={600}

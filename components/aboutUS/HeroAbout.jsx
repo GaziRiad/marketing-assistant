@@ -96,7 +96,7 @@ function HeroAbout() {
         alt="My marketing assistant about us page hero shape"
         className="blue-triangle--small absolute -left-[15%] bottom-0 rotate-12 scale-[25%] lg:left-0"
       />
-      <div className=" flex flex-col items-center justify-center">
+      <div className="font-spartan flex flex-col items-center justify-center">
         <Image
           src="/images/logotag.png"
           height={500}
