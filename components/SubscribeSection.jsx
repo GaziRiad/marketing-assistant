@@ -6,7 +6,7 @@ function SubscribeSection() {
       <Link
         href="#"
         target="_blank"
-        className="flex flex-col items-center justify-center gap-4 rounded-full bg-[#5ACBF0] py-12 text-center font-bold text-background lg:gap-8 lg:py-80"
+        className="flex flex-col items-center justify-center rounded-full bg-[#5ACBF0] px-4 py-12 text-center font-bold leading-relaxed text-background lg:gap-8 lg:py-80 lg:leading-tight"
       >
         <span>Subscribe to</span>
         <span>Weekly Marketing Bundle</span>
