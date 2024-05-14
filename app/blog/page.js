@@ -1,7 +1,6 @@
 import MainPost from "@/components/blog/MainPost";
 import SecondaryPosts from "@/components/blog/SecondaryPosts";
 import { client, urlFor } from "../lib/sanity";
-import Header from "@/components/Header";
 import BlogSlider from "@/components/blog/BlogSlider";
 import Footer from "@/components/Footer";
 import Spinner from "@/components/Spinner";

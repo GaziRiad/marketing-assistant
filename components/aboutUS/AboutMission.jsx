@@ -1,8 +1,34 @@
+"use client";
+
 import Image from "next/image";
 
+import { useEffect, useRef } from "react";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import gsap from "gsap";
+
 function AboutMission() {
+  const sectionRef = useRef();
+
+  useEffect(() => {
+    // Ensure your elements exist
+    if (sectionRef.current) {
+      // Use the ScrollTrigger.create static method to set up the animation
+      ScrollTrigger.create({
+        trigger: sectionRef.current, // Reference to your DOM element
+        start: "top bottom",
+        end: "bottom top",
+        onEnter: () =>
+          gsap.fromTo(
+            sectionRef.current,
+            { opacity: 0, y: +120 },
+            { opacity: 1, y: 0, duration: 1 },
+          ),
+      });
+    }
+  }, []);
+
   return (
-    <section className="container mx-auto mb-24 px-5 lg:mb-40">
+    <section className="container mx-auto mb-24 px-5 lg:mb-40" ref={sectionRef}>
       <article className="flex flex-col items-center justify-between gap-8 lg:flex-row lg:gap-24">
         <div className="relative w-full lg:w-[25%]">
           <div className="mb-6 flex items-center justify-start lg:hidden">
@@ -37,7 +63,7 @@ function AboutMission() {
             Our <span className=" text-primary"> Mission</span>
           </p>
         </div>
-        <div className=" flex flex-1 flex-col gap-4 text-lg leading-8 lg:text-xl">
+        <div className="flex flex-1 flex-col gap-4 text-lg leading-8 lg:text-xl">
           <p>
             Our mission is to champion small business owners by providing them
             with the digital marketing tools and knowledge necessary for success

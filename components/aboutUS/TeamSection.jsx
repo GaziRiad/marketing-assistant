@@ -1,8 +1,46 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { ImLinkedin } from "react-icons/im";
 
+import { useEffect, useRef } from "react";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import gsap from "gsap";
+
 function TeamSection() {
+  const imgRef = useRef();
+  const textRef = useRef();
+
+  useEffect(() => {
+    // Ensure your elements exist
+    if (imgRef.current) {
+      // Use the ScrollTrigger.create static method to set up the animation
+      ScrollTrigger.create({
+        trigger: imgRef.current, // Reference to your DOM element
+        start: "top bottom",
+        end: "bottom top",
+        onEnter: () =>
+          gsap.fromTo(imgRef.current, { scale: 0 }, { scale: 1, duration: 1 }),
+      });
+    }
+
+    if (textRef.current) {
+      // Use the ScrollTrigger.create static method to set up the animation
+      ScrollTrigger.create({
+        trigger: textRef.current, // Reference to your DOM element
+        start: "top bottom",
+        end: "bottom top",
+        onEnter: () =>
+          gsap.fromTo(
+            textRef.current,
+            { opacity: 0, y: +120 },
+            { opacity: 1, y: 0, duration: 1 },
+          ),
+      });
+    }
+  }, []);
+
   return (
     <section className="container relative mx-auto mb-24 px-5 lg:mb-40">
       <Image
@@ -24,6 +62,7 @@ function TeamSection() {
           </p>
         </h2>
         <Image
+          ref={imgRef}
           src="/images/owner.webP"
           height={320}
           width={320}
@@ -39,7 +78,7 @@ function TeamSection() {
             <ImLinkedin color="#5ACBF0" size={26} />
           </Link>
         </div>
-        <p className="text-center text-xl leading-relaxed">
+        <p className="text-center text-xl leading-relaxed" ref={textRef}>
           “As a small business owner myself, I’ve walked the path of challenges
           and triumphs, understanding firsthand the hurdles we face in making
           our dreams a reality. The vision behind My Marketing Assistant stems
