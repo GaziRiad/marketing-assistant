@@ -63,7 +63,7 @@ function TeamSection() {
         </h2>
         <Image
           ref={imgRef}
-          src="/images/owner.webP"
+          src="/images/owner.png"
           height={320}
           width={320}
           alt="picture of Jeanette Kramer"
