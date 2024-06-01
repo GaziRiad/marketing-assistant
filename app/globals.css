@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /*WHITE*/
+    --foreground: 240 10% 3.9%; /*BLACK*/
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 355, 87%, 66%; /*PINK*/
+    --primary-foreground: 0 0% 98%; /*WHITE --> NEED TO BE DARKER PINK*/
+
+    --secondary: 48, 96%, 70%; /*YELLOW*/
+    --secondary-foreground: 48, 99%, 61%; /*DARK YELLOW*/
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 240 4.8% 95.9%; /*LIGHT GREY */
+    --accent-foreground: 355, 87%, 66%; /*PINK */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 240, 6%, 10%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 240 5.9% 90%;
+    --primary-foreground: 355, 87%, 66%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 240 5.9% 90%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 240 5.9% 90%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background:
+    radial-gradient(farthest-side, #ffa516 94%, #0000) top/8px 8px no-repeat,
+    conic-gradient(#0000 30%, #ffa516);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+  animation: l13 1s infinite linear;
+}
+@keyframes l13 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.footer-card-shadow:hover {
+  box-shadow: 6px 6px 0px 1px #222;
+}
+
+@media (max-width: 600px) {
+  .footer-card-shadow:hover {
+    box-shadow: 2px 2px 0px 1px #222;
+  }
+}
+
+/* ::-moz-selection {
+  color: #fff;
+  background: #222;
+}
+
+::selection {
+  color: #fff;
+  background: #222;
+} */
