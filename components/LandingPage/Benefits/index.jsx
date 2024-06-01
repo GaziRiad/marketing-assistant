@@ -8,7 +8,7 @@ const Benefits = () => {
   const [selectedBenefit, setSelectedBenefit] = useState(benefitsList[1]);
 
   return (
-    <div className="flex sm:flex-row flex-col items-center px-6">
+    <div className="container flex sm:flex-row flex-col items-center">
       <div className="sm:w-[60%] font-bold">
         <p className="text-3xl text-[#545454]">
           It will be your best investment
@@ -17,10 +17,10 @@ const Benefits = () => {
           that eliminates all{" "}
           <span className="underline underline-offset-2">excuses.</span>
         </p>
-        <h1 className="mt-5 text-5xl font-bold text-[#292929]">
+        <h1 className="mt-5 text-3xl md:text-5xl font-bold text-[#292929]">
           Budget Friendly
         </h1>
-        <h1 className="mt-5 text-4xl font-bold text-[#292929]">360 Digital</h1>
+        <h1 className="mt-5 text-3xl md:text-4xl font-bold text-[#292929]">360 Digital</h1>
         {benefitsList.map((benefit, index) => (
           <h1
             key={index}

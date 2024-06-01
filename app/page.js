@@ -1,4 +1,4 @@
-import { Hero, Cards, Marketing, Benefits, Testimonial } from "@/components/LandingPage";
+import { Hero, Cards, Marketing, Benefits, Testimonial, EfficiencyShowcase } from "@/components/LandingPage";
 
 function Home() {
   return (
@@ -9,6 +9,7 @@ function Home() {
       <div className="py-10 bg-[#FCDE67]">
         <Benefits />
         <Testimonial />
+        <EfficiencyShowcase />
       </div>
     </div>
   );
