@@ -9,7 +9,7 @@ const Testimonial = () => {
 
   return (
     <div className="container">
-      <div className="mt-20 rounded-[40px] bg-white py-10 md:py-20">
+      <div className="mt-20 lg:rounded-[40px] rounded-3xl bg-white py-10 md:py-20">
         <h1 className="text-center text-2xl font-bold text-[#393E41] md:text-5xl">
           WHAT <br /> SOLOPRENEURS <br /> THINK?
         </h1>

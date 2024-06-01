@@ -1,4 +1,4 @@
-import { Hero, Cards, Marketing, Benefits, Testimonial, EfficiencyShowcase } from "@/components/LandingPage";
+import { Hero, Cards, Marketing, Benefits, Testimonial, EfficiencyShowcase, Pricing } from "@/components/LandingPage";
 
 function Home() {
   return (
@@ -10,6 +10,7 @@ function Home() {
         <Benefits />
         <Testimonial />
         <EfficiencyShowcase />
+        <Pricing />
       </div>
     </div>
   );

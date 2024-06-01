@@ -4,7 +4,7 @@ const EfficiencyShowcase = () => {
   return (
     <div className="container mt-5 flex flex-col justify-center items-center">
       <p>Solopreneurs, Freelancers, Social Media Managers…</p>
-      <h1 className="text-3xl font-bold">
+      <h1 className="text-3xl font-bold text-[#253439]">
         You’ve never worked <span className="text-[#F45B69]">this fast</span>
       </h1>
       <div className="rounded-[40px] md:h-[700px] bg-[#5CE1E6] p-5   md:p-10 mt-5">

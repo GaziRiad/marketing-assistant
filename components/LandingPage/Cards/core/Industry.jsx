@@ -18,7 +18,7 @@ const Industry = () => {
           For <span className="text-[#89B9D1]">every </span> <br className="md:hidden block" /> industry.
         </p>
       </div>
-      <div className="relative mt-5 flex h-[500px] items-center justify-center rounded-b-lg bg-[#89B9D1] md:px-5 pb-16 pt-20 md:mt-0 md:h-[700px] md:w-1/2 md:rounded-none md:rounded-r-[40px] lg:h-[600px]">
+      <div className="relative mt-5 flex h-[450px] items-center justify-center rounded-b-lg bg-[#89B9D1] md:px-5 pb-16 pt-20 md:mt-0 md:h-[700px] md:w-1/2 md:rounded-none md:rounded-r-[40px] lg:h-[600px]">
         <Carousel className="w-full lg:max-w-lg">
           <CarouselContent className="-ml-1">
             {IndustryImageSources.map((item, index) => (
@@ -28,9 +28,9 @@ const Industry = () => {
               >
                 <div className="p-5">
                   <Card>
-                    <CardContent className="flex aspect-square items-center justify-center md:p-2">
+                    <CardContent >
                       <Image
-                        className="md:h-[300px] h-[350px] w-full rounded-md object-cover"
+                        className="md:h-[300px] h-[300px] w-full rounded-md object-cover"
                         alt={item.alt}
                         src={item.src}
                         width={500}
