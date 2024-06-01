@@ -12,7 +12,7 @@ const Customization = () => {
           for <span className="text-[#FFC736]">every business.</span>
         </p>
       </div>
-      <div className="mt-5 flex items-center rounded-b-lg bg-[#FCDE67] md:mt-0 md:rounded-none md:rounded-r-[40px] md:px-10 lg:h-[600px] md:w-1/2 2xl:px-32">
+      <div className="mt-5 flex items-center rounded-b-lg bg-[#FCDE67] md:mt-0 md:rounded-none md:rounded-r-[40px] md:px-10 h-[500px] md:h-[700px] lg:h-[600px] md:w-1/2 2xl:px-32">
         <video
           autoPlay
           loop

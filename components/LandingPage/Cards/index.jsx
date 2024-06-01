@@ -53,13 +53,13 @@ function stackedCards(cardClassName) {
   });
 }
 
-const Inspiration = () => {
+const Cards = () => {
   useEffect(() => {
     stackedCards(".card");
   }, []);
 
   return (
-    <div className="space-y-10 pb-56">
+    <div className="container space-y-10">
       <Meaningful />
       <Industry />
       <Captions />
@@ -70,4 +70,4 @@ const Inspiration = () => {
   );
 };
 
-export default Inspiration;
+export default Cards;

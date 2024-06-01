@@ -77,3 +77,26 @@ export const FocusContentFooterCaptions = [
     `,
   },
 ];
+
+export const benefitsList = [
+  {
+    title: "Easy",
+    text: "Marketing efforts are being sidelined by more pressing tasks. Every week, e-mails arrive like clockwork, landing in your inbox at the same magical hour every week. Imagine a world where your digital marketing materializes effortlessly, lightening your load and sparking a steady blaze of digital marketing brilliance.",
+  },
+  {
+    title: "Consistent",
+    text: "Consistency is key in marketing. Our services ensure that your marketing efforts are regular and reliable, keeping your audience engaged and your brand at the forefront of their minds.",
+  },
+  {
+    title: "Saves Time",
+    text: "Save time with our streamlined marketing processes. We handle the heavy lifting so you can focus on what matters most: growing your business.",
+  },
+  {
+    title: "Unique & Creative",
+    text: "Stand out with unique and creative marketing solutions. We bring fresh ideas and innovative strategies to make your brand unforgettable.",
+  },
+  {
+    title: "For every industry",
+    text: "Our marketing solutions are tailored to fit every industry. No matter your field, we have the expertise to help you succeed.",
+  },
+];

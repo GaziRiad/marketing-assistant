@@ -6,7 +6,7 @@ const Marketing = () => {
   const starsArray = Array(5).fill(null);
 
   return (
-    <div>
+    <div className="container">
       <div className="lg:flex hidden items-center justify-center gap-5 overflow-hidden">
         <Image
           className="relative bottom-5 lg:h-[200px] lg:w-[200px] h-[150px] w-[150px] object-contain"

@@ -15,7 +15,7 @@ const Hero = () => {
   };
 
   return (
-    <>
+    <div className="container">
       <div className="flex flex-col items-center">
         <Image
           src={"/images/logotag.png"}
@@ -47,7 +47,7 @@ const Hero = () => {
         every week.
       </p>
       <ContentHub />
-    </>
+    </div>
   );
 };
 

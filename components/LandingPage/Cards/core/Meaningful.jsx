@@ -17,7 +17,7 @@ const Meaningful = () => {
           a whole.
         </p>
       </div>
-      <div className="mt-5 flex h-[500px] rounded-b-lg bg-[#F45B69] md:mt-0 md:w-1/2 md:rounded-none  md:rounded-r-[40px] md:px-5 lg:h-[600px] xl:px-20">
+      <div className="mt-5 flex rounded-b-lg bg-[#F45B69] md:mt-0 md:w-1/2 md:rounded-none md:rounded-r-[40px] md:px-5 h-[500px] md:h-[700px] lg:h-[600px] xl:px-20">
         <div className="hidden h-full flex-col justify-between space-y-0 py-10 xl:flex">
           <div>
             <MdOutlineKeyboardDoubleArrowUp className="flex-none text-[6rem] text-white" />
