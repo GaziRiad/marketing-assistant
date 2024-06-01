@@ -100,3 +100,30 @@ export const benefitsList = [
     text: "Our marketing solutions are tailored to fit every industry. No matter your field, we have the expertise to help you succeed.",
   },
 ];
+
+export const TestimonialList = [
+  {
+    image: "/images/owner.png",
+    title: "Anna, business owner",
+    text: `
+      I cannot recommend working with Jhon enough, his guidance and way to teach changed my workflow,
+      and helped with my productivity, I will be working with him again, thank you very much Jhon.
+    `
+  },
+  {
+    image: "/images/owner.png",
+    title: "Anna, business owner",
+    text: `
+      I cannot recommend working with Jhon enough, his guidance and way to teach changed my workflow,
+      and helped with my productivity, I will be working with him again, thank you very much Jhon.
+    `
+  },
+  {
+    image: "/images/owner.png",
+    title: "Anna, business owner",
+    text: `
+      I cannot recommend working with Jhon enough, his guidance and way to teach changed my workflow,
+      and helped with my productivity, I will be working with him again, thank you very much Jhon.
+    `
+  },
+];

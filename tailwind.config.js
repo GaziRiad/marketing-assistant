@@ -21,6 +21,9 @@ module.exports = {
         main: "Poppins, sans-serif",
         spartan: "League Spartan, sans-serif",
       },
+      boxShadow: {
+        'custom': 'rgba(0, 0, 0, 0.45) 0px 25px 20px -20px',
+      },
       screens: {
         "3xl": "1600px",
       },

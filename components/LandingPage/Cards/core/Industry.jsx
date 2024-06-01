@@ -28,7 +28,7 @@ const Industry = () => {
               >
                 <div className="p-5">
                   <Card>
-                    <CardContent className="flex aspect-square items-center justify-center md:p-6">
+                    <CardContent className="flex aspect-square items-center justify-center md:p-2">
                       <Image
                         className="md:h-[300px] h-[350px] w-full rounded-md object-cover"
                         alt={item.alt}
