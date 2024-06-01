@@ -7,7 +7,7 @@ import {
 
 const Meaningful = () => {
   return (
-    <div className="mt-10 flex flex-col rounded-lg bg-[#F7F7F7] md:flex-row md:rounded-[40px]">
+    <div className="mt-10 flex flex-col rounded-lg bg-[#F7F7F7] md:flex-row md:rounded-[40px] card sticky top-0">
       <div className="flex items-center justify-center md:w-1/2 relative">
         <p className="absolute -left-[103px] top-40 hidden rotate-90 text-lg font-bold text-[#777777] md:block">
           <span className="text-[#F45B69]">DESIGNER</span> IN YOUR INBOX
@@ -17,7 +17,7 @@ const Meaningful = () => {
           a whole.
         </p>
       </div>
-      <div className="mt-5 flex h-[500px] rounded-b-lg bg-[#F45B69] md:mt-0 md:w-1/2 md:rounded-none  md:rounded-r-[40px] md:px-5 lg:h-[740px] xl:px-20">
+      <div className="mt-5 flex h-[500px] rounded-b-lg bg-[#F45B69] md:mt-0 md:w-1/2 md:rounded-none  md:rounded-r-[40px] md:px-5 lg:h-[600px] xl:px-20">
         <div className="hidden h-full flex-col justify-between space-y-0 py-10 xl:flex">
           <div>
             <MdOutlineKeyboardDoubleArrowUp className="flex-none text-[6rem] text-white" />

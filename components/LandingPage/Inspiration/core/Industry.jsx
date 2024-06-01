@@ -8,38 +8,31 @@ import {
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
-import {
-  IndustryImageSources,
-} from "@/app/lib/constant";
+import { IndustryImageSources } from "@/app/lib/constant";
 
 const Industry = () => {
   return (
-    <div className="mt-10 flex md:flex-row flex-col md:rounded-[40px] rounded-lg bg-[#F7F7F7]">
-      <div className="flex md:w-1/2 items-center justify-center">
-        <p className="text-center sm:text-4xl text-2xl font-bold text-[#777777] mt-5 md:mt-0">
+    <div className="flex flex-col rounded-lg bg-[#F7F7F7] md:flex-row md:rounded-[40px] sticky top-0">
+      <div className="flex items-center justify-center md:w-1/2">
+        <p className="mt-5 text-center text-2xl font-bold text-[#777777] sm:text-4xl md:mt-0">
           For <span className="text-[#89B9D1]">every </span> industry.
         </p>
       </div>
-      <div className="relative flex lg:h-[740px] h-[500px] mt-5 md:mt-0 md:w-1/2 justify-center rounded-b-lg md:rounded-none md:rounded-r-[40px] bg-[#89B9D1] px-10">
+      <div className="relative mt-5 flex justify-center items-center rounded-b-lg bg-[#89B9D1] px-5 md:mt-0 md:w-1/2 md:rounded-none md:rounded-r-[40px] md:px-10 h-full lg:h-[600px] pt-20 pb-16">
         <Carousel
           opts={{
             align: "start",
           }}
-          className="flex md:max-w-lg items-center"
+          orientation="vertical"
+          className="w-full max-w-md"
         >
-          <CarouselContent>
+          <CarouselContent className="h-[500px] w-full mt-5">
             {IndustryImageSources.map((item, index) => (
-              <CarouselItem key={index} className="md:basis-2/2 lg:basis-1/2 w-full">
-                <div>
+              <CarouselItem key={index} className="pt-1 basis-1/2">
+                <div className="p-1">
                   <Card>
-                    <CardContent className="sm:h-[400px] h-[300px] rounded-md">
-                      <Image
-                        className="h-full w-full rounded-md object-fill md:object-cover"
-                        width={2000}
-                        height={2000}
-                        src={item.src}
-                        alt="svg"
-                      />
+                    <CardContent className="flex items-center justify-center h-[200px] rounded-md">
+                      <Image className="h-[200px] w-full object-cover rounded-md" alt={item.alt} src={item.src} width={500} height={500} />
                     </CardContent>
                   </Card>
                 </div>

@@ -3,7 +3,7 @@ import React from "react";
 
 const Tutorials = () => {
   return (
-    <div className="mt-10 flex flex-col rounded-lg bg-[#F7F7F7] md:flex-row md:rounded-[40px] md:h-[450px] lg:h-full">
+    <div className="flex flex-col rounded-lg bg-[#F7F7F7] md:flex-row md:rounded-[40px] md:h-[450px] lg:h-full sticky top-0">
       <div className="relative flex items-center justify-center md:w-1/2">
         <p className="absolute -left-[145px] top-52 hidden rotate-90 text-lg font-bold text-[#777777] md:block">
           <span className="text-[#F45B69]">MARKETING GURUS</span> IN YOUR INBOX

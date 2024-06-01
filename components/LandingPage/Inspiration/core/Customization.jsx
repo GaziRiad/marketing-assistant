@@ -2,7 +2,7 @@ import React from "react";
 
 const Customization = () => {
   return (
-    <div className="mt-10 flex flex-col rounded-lg bg-[#F7F7F7] md:flex-row md:rounded-[40px]">
+    <div className="flex flex-col rounded-lg bg-[#F7F7F7] md:flex-row md:rounded-[40px] sticky top-0">
       <div className="relative flex items-center justify-center md:w-1/2">
         <p className="mt-5 text-center text-2xl font-bold text-[#777777] sm:text-4xl md:mt-0">
           Easy to {" "}
