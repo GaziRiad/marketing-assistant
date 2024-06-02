@@ -27,10 +27,10 @@ const SideBar = () => {
         ))}
       </div>
       <div className="mx-4 mt-10 grid grid-cols-2 gap-[9px]">
-        <div className="h-[228px] w-full rounded-2xl bg-[#F7F7F7]" />
-        <div className="h-[228px] w-full rounded-2xl bg-[#F7F7F7]" />
-        <div className="h-[130px] w-full rounded-2xl bg-[#F7F7F7]" />
-        <div className="h-[130px] w-full rounded-2xl bg-[#F7F7F7]" />
+        <div className="h-[228px] w-full rounded-2xl bg-[#F7F7F7] md:block hidden" />
+        <div className="h-[228px] w-full rounded-2xl bg-[#F7F7F7] md:block hidden" />
+        <div className="h-[130px] w-full rounded-2xl bg-[#F7F7F7] md:block hidden" />
+        <div className="h-[130px] w-full rounded-2xl bg-[#F7F7F7] md:block hidden" />
       </div>
     </div>
   );
