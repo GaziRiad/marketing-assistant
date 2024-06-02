@@ -80,6 +80,14 @@ export const FocusContentFooterCaptions = [
 
 export const benefitsList = [
   {
+    title: "Budget Friendly",
+    text: "Budget Friendly- Marketing efforts are being sidelined by more pressing tasks. Every week, e-mails arrive like clockwork, landing in your inbox at the same magical hour every week. Imagine a world where your digital marketing materializes effortlessly, lightening your load and sparking a steady blaze of digital marketing brilliance.",
+  },
+  {
+    title: "360 Digital",
+    text: "360 Digital- Marketing efforts are being sidelined by more pressing tasks. Every week, e-mails arrive like clockwork, landing in your inbox at the same magical hour every week. Imagine a world where your digital marketing materializes effortlessly, lightening your load and sparking a steady blaze of digital marketing brilliance.",
+  },
+  {
     title: "Easy",
     text: "Marketing efforts are being sidelined by more pressing tasks. Every week, e-mails arrive like clockwork, landing in your inbox at the same magical hour every week. Imagine a world where your digital marketing materializes effortlessly, lightening your load and sparking a steady blaze of digital marketing brilliance.",
   },

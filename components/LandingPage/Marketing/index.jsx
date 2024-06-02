@@ -37,7 +37,7 @@ const Marketing = () => {
           alt="svg"
         />
       </div>
-      <h1 className="mt-10 text-center md:text-4xl text-3xl font-bold text-[#F45B69]">
+      <h1 className="mt-10 text-center md:text-4xl text-3xl font-bold leading-10 text-[#F45B69]">
         Your marketing assistant <br /> got your back.
       </h1>
       <div className="mt-5 flex flex-col items-center">
@@ -45,11 +45,12 @@ const Marketing = () => {
           {starsArray.map((_, index) => (
             <MdOutlineStarPurple500
               key={index}
-              className="text-[30px] text-[#FFB600]"
+              className="text-[45px] text-[#FFB600]"
             />
           ))}
         </div>
-        <p className="font-gochi text-[#464242] mt-2 text-lg">+2000 happy clients</p>
+        <p className="text-[#464242] mt-2 font-gochi text-2xl">+2000 happy clients</p>
+
       </div>
     </div>
   );

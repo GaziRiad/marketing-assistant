@@ -9,15 +9,15 @@ const Testimonial = () => {
 
   return (
     <div className="container">
-      <div className="mt-20 lg:rounded-[40px] rounded-3xl bg-white py-10 md:py-20">
-        <h1 className="text-center text-2xl font-bold text-[#393E41] md:text-5xl">
+      <div className="mt-20 lg:rounded-[40px] rounded-3xl bg-white pt-10 pb-28 lg:px-16">
+        <h1 className="text-center text-2xl sm:text-3xl font-bold text-[#393E41] md:text-5xl">
           WHAT <br /> SOLOPRENEURS <br /> THINK?
         </h1>
         <div className="mt-10 flex flex-col items-center justify-center gap-2 md:flex-row lg:gap-10">
           {TestimonialList.map((item, index) => (
             <div
               key={index}
-              className="shadow-custom relative mt-10 flex flex-col items-center py-10 md:w-[420px] "
+              className="shadow-custom relative md:mt-10 flex flex-col items-center py-10 md:w-[420px] "
             >
               <div className="flex gap-x-2 text-[#FFBC00]">
                 {startsArray.map((_, index) => (
@@ -31,7 +31,7 @@ const Testimonial = () => {
                 src={item.image}
                 alt="Avatar"
               />
-              <h3>{item.title}</h3>
+              <h3 className="font-semibold uppercase mt-2 font-sans z-10">{item.title}</h3>
               <p className="mt-2 px-5 text-center text-sm font-light text-[#525456] lg:px-10">
                 {item.text}
               </p>

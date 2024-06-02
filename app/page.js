@@ -6,7 +6,7 @@ function Home() {
       <Hero />
       <Marketing />
       <Cards />
-      <div className="py-10 bg-[#FCDE67]">
+      <div className="py-10 bg-[#FCDE67] mt-10">
         <Benefits />
         <Testimonial />
         <EfficiencyShowcase />
