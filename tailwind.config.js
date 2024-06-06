@@ -20,6 +20,10 @@ module.exports = {
       fontFamily: {
         main: "Poppins, sans-serif",
         spartan: "League Spartan, sans-serif",
+        gochi: ["Gochi Hand", "cursive"],
+      },
+      boxShadow: {
+        'custom': 'rgba(0, 0, 0, 0.45) 0px 25px 20px -20px',
       },
       screens: {
         "3xl": "1600px",

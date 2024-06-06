@@ -73,8 +73,8 @@ function TeamSection() {
           <Image
             ref={imgRef}
             src="/images/owner.png"
-            height={320}
-            width={320}
+            height={480}
+            width={480}
             alt="picture of Jeanette Kramer"
             className=" mb-2"
           />

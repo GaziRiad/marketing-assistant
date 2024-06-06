@@ -1,3 +1,4 @@
+import { TemplateProvider } from "@/components/context/TemplateContext";
 import "./globals.css";
 import Header from "@/components/Header";
 
@@ -15,8 +16,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="light">
       <body className="font-main">
-        <Header />
-        {children}
+        <TemplateProvider>
+          <Header />
+          {children}
+        </TemplateProvider>
       </body>
     </html>
   );
