@@ -34,7 +34,7 @@ const ProfilePreview = () => {
           ) : (
             <Image
               className="relative bottom-5 z-10 h-[300px] object-contain sm:h-[400px] sm:w-full sm:object-cover md:h-[550px] xl:h-full"
-              src={"/images/ProfilePreviewImg.png"}
+              src="/images/ProfilePreviewImg.png"
               alt="Logo"
               width={700}
               height={700}
