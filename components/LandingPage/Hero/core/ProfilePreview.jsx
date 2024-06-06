@@ -2,6 +2,8 @@ import { useTemplate } from "@/components/context/TemplateContext";
 import Image from "next/image";
 import React from "react";
 
+import profilePrev from "../../../../public/images/ProfilePreviewImg.png";
+
 const ProfilePreview = () => {
   const { selectedTemplate } = useTemplate();
   return (
@@ -34,7 +36,7 @@ const ProfilePreview = () => {
           ) : (
             <Image
               className="relative bottom-5 z-10 h-[300px] object-contain sm:h-[400px] sm:w-full sm:object-cover md:h-[550px] xl:h-full"
-              src="/images/ProfilePreviewImg.png"
+              src={profilePrev}
               alt="Logo"
               width={700}
               height={700}
