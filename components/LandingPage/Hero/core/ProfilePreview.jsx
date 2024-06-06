@@ -27,7 +27,7 @@ const ProfilePreview = () => {
                 className="absolute top-16 z-10 h-[30%] w-[80%] rounded-3xl object-contain 2xl:object-cover"
               >
                 <source
-                  src={"/vidoes/CustomizationVideo.mp4"}
+                  src={"../../../../public/vidoes/CustomizationVideo.mp4"}
                   type="video/mp4"
                 />
                 <track kind="captions" label="English" default />

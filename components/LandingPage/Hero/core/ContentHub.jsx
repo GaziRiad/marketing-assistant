@@ -5,8 +5,8 @@ import ProfilePreview from "./ProfilePreview";
 
 const ContentHub = () => {
   return (
-    <div className="mt-5 flex flex-col xl:flex-row gap-3 rounded-[40px] border-2 bg-[#F7F7F7] md:p-5 p-2 text-[#545454]">
-      <div className="flex flex-col md:flex-row justify-between gap-5 ">
+    <div className="mt-5 flex flex-col gap-3 rounded-[40px] border-2 bg-[#F7F7F7] p-2 text-[#545454] md:p-5 xl:flex-row">
+      <div className="flex flex-col justify-between gap-5 md:flex-row ">
         <SideBar />
         <div className="block w-full md:w-1/2 xl:hidden">
           <ProfilePreview />
