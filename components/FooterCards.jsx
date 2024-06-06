@@ -40,7 +40,7 @@ function FooterCards() {
     <>
       <div
         ref={sectionRef}
-        className="font-spartan container mx-auto flex flex-grow grid-cols-4 grid-rows-4 flex-wrap gap-2 rounded-3xl bg-background p-6 xl:grid xl:gap-8"
+        className="container mx-auto flex flex-grow grid-cols-4 grid-rows-4 flex-wrap gap-2 rounded-3xl bg-background p-6 font-spartan xl:grid xl:gap-8"
       >
         <div className="row-span-1 rounded-2xl py-4">
           <Image
@@ -102,7 +102,7 @@ function FooterCards() {
         </Link>
         <div
           href="#"
-          className="relative col-start-3 row-span-2 row-start-3 hidden w-full items-end justify-start rounded-2xl bg-secondary px-6 py-6 pr-12 transition-all xl:flex xl:py-12"
+          className="footer-card-shadow relative col-start-3 row-span-2 row-start-3 hidden w-full items-end justify-start rounded-2xl bg-secondary px-6 py-6 pr-12 transition-all xl:flex xl:py-12"
         >
           <Image
             height={500}
