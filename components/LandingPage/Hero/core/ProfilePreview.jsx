@@ -26,10 +26,7 @@ const ProfilePreview = () => {
                 playsInline
                 className="absolute top-16 z-10 h-[30%] w-[80%] rounded-3xl object-contain 2xl:object-cover"
               >
-                <source
-                  src={"../../../../public/vidoes/CustomizationVideo.mp4"}
-                  type="video/mp4"
-                />
+                <source src="/vidoes/CustomizationVideo.mp4" type="video/mp4" />
                 <track kind="captions" label="English" default />
                 Your browser does not support the video tag.
               </video>
