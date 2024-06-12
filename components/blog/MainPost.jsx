@@ -72,16 +72,9 @@ function MainPost({ post }) {
           alt="wave img"
           className="absolute left-0 top-0 z-10 -translate-x-[10%] -translate-y-1/2 scale-75 xl:left-auto xl:right-0 xl:translate-x-1/2"
         />
-        <p className="font-spartan absolute left-0 top-0 z-20 -translate-y-1/2 translate-x-1/2 text-4xl font-bold text-white xl:left-auto xl:right-0 xl:translate-x-1/2">
+        <p className="absolute left-0 top-0 z-20 -translate-y-1/2 translate-x-1/2 font-spartan text-4xl font-bold text-white xl:left-auto xl:right-0 xl:translate-x-1/2">
           Blog
         </p>
-        <Image
-          width={500}
-          height={500}
-          src="/blob.svg"
-          alt="svg"
-          className="absolute -bottom-[10%] -left-[20%] -z-20 w-44"
-        />
       </div>
       <div className="z-20 flex-1 opacity-0" ref={textRef}>
         <p className="mb-2 text-3xl font-bold capitalize">

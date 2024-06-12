@@ -88,8 +88,8 @@ function BlogSlider({ posts }) {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className="-ml-8 scale-125 sm:-ml-6 md:scale-100" />
+        <CarouselNext className="-mr-8 scale-125 sm:-mr-6 md:scale-100" />
       </Carousel>
     </section>
   );

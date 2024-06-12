@@ -18,12 +18,12 @@ function SubscribeSection() {
         toggleActions: "play none none none", // Actions: onEnter, onLeave, onEnterBack, onLeaveBack
         start: "top 80%",
         end: "bottom top",
-        onEnter: () =>
-          gsap.fromTo(
-            sectionRef.current,
-            { scale: 0.5 },
-            { scale: 1, duration: 0.5, ease: "power4.inOut" },
-          ),
+        // onEnter: () =>
+        //   gsap.fromTo(
+        //     sectionRef.current,
+        //     { borderRadius: "0px" },
+        //     { borderRadius: "100000px", duration: 2, ease: "power4.inOut" },
+        //   ),
       });
     }
 
@@ -41,7 +41,7 @@ function SubscribeSection() {
         ref={sectionRef}
         href="#"
         target="_blank"
-        className="font-spartan flex flex-col items-center justify-center rounded-full bg-[#5ACBF0] px-4 py-12 text-center font-bold leading-relaxed text-background transition-all hover:bg-[#51b7d8] lg:gap-8 lg:py-80 lg:leading-tight"
+        className="flex flex-col items-center justify-center rounded-full bg-[#5ACBF0] px-4 py-12 text-center font-spartan font-bold leading-relaxed text-background transition-all hover:bg-[#51b7d8] lg:gap-8 lg:py-80 lg:leading-tight"
       >
         <span>Subscribe to</span>
         <span>Weekly Marketing Bundle</span>
