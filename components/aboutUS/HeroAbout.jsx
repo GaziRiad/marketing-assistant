@@ -73,7 +73,7 @@ function HeroAbout() {
   }, []);
 
   return (
-    <section className="container relative mx-auto overflow-hidden pb-60">
+    <section className="container relative mx-auto min-h-screen overflow-hidden pb-60">
       <Image
         src="/yellow-triangle.svg"
         height={400}
@@ -96,7 +96,7 @@ function HeroAbout() {
         alt="My marketing assistant about us page hero shape"
         className="blue-triangle--small absolute -left-[15%] bottom-0 rotate-12 scale-[25%] lg:left-0"
       />
-      <div className="font-spartan flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center font-spartan">
         <Image
           src="/images/logotag.png"
           height={500}

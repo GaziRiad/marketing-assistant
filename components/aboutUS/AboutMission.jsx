@@ -7,51 +7,22 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import gsap from "gsap";
 
 function AboutMission() {
-  const textRef = useRef();
-  const imgRef = useRef();
-  const svgRef = useRef();
-
-  useEffect(() => {
-    if (textRef.current) {
-      ScrollTrigger.create({
-        trigger: textRef.current,
-        toggleActions: "play none none none",
-        start: "top bottom",
-        end: "bottom top",
-        scrub: true,
-        onEnter: () =>
-          gsap.fromTo(
-            textRef.current,
-            { opacity: 0, x: +120 },
-            { opacity: 1, duration: 1, x: 0 },
-          ),
-      });
-    }
-
-    return () => {
-      ScrollTrigger.getAll().forEach((instance) => instance.kill());
-    };
-  }, []);
+  const sectionRef = useRef();
 
   useEffect(() => {
     const tl = gsap.timeline(
       ScrollTrigger.create({
-        trigger: imgRef.current, // Reference to your DOM element
+        trigger: sectionRef.current,
         toggleActions: "play none none none", // Actions: onEnter, onLeave, onEnterBack, onLeaveBack
         start: "-20% bottom",
         end: "bottom top",
         scrub: true,
         onEnter: () => {
           gsap.fromTo(
-            imgRef.current,
-            { opacity: 0, x: -120 },
-            { opacity: 1, duration: 1, x: 0 },
-          ),
-            gsap.fromTo(
-              svgRef.current,
-              { opacity: 0 },
-              { opacity: 1, duration: 1 },
-            );
+            sectionRef.current,
+            { opacity: 0 },
+            { opacity: 1, duration: 1.5 },
+          );
         },
       }),
     );
@@ -63,8 +34,11 @@ function AboutMission() {
 
   return (
     <section className="container mx-auto mb-24 px-5 lg:mb-40">
-      <article className="flex flex-col items-center justify-between gap-8 lg:flex-row lg:gap-24">
-        <div className="relative w-full opacity-0 lg:w-[25%]" ref={imgRef}>
+      <article
+        className="flex flex-col items-center justify-between gap-8 lg:flex-row lg:gap-24"
+        ref={sectionRef}
+      >
+        <div className="relative w-full lg:w-[25%]">
           <div className="mb-6 flex items-center justify-start lg:hidden">
             <Image
               src="/waveshape.svg"
@@ -73,7 +47,7 @@ function AboutMission() {
               alt="wave img"
               className="z-10 inline-block w-24 xl:left-auto xl:right-0 xl:translate-x-1/2"
             />
-            <p className="font-spartan z-20 -ml-20 inline-block text-4xl font-bold text-white dark:text-primary xl:-right-20 xl:left-auto xl:translate-x-1/2">
+            <p className="z-20 -ml-20 inline-block font-spartan text-4xl font-bold text-white dark:text-primary xl:-right-20 xl:left-auto xl:translate-x-1/2">
               Our <span className=" ml-2 text-primary"> Mission</span>
             </p>
           </div>
@@ -96,10 +70,7 @@ function AboutMission() {
             Our <span className=" text-primary"> Mission</span>
           </p>
         </div>
-        <div
-          className="flex flex-1 flex-col gap-4 text-lg leading-8 lg:text-xl"
-          ref={textRef}
-        >
+        <div className="flex flex-1 flex-col gap-4 text-lg leading-8 lg:text-xl">
           <p>
             Our mission is to champion small business owners by providing them
             with the digital marketing tools and knowledge necessary for success

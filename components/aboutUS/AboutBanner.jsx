@@ -10,17 +10,16 @@ function AboutBanner() {
   useEffect(() => {
     // Ensure your elements exist
     if (sectionRef.current) {
-      // Use the ScrollTrigger.create static method to set up the animation
       ScrollTrigger.create({
-        trigger: sectionRef.current, // Reference to your DOM element
+        trigger: sectionRef.current,
         toggleActions: "play none none none", // Actions: onEnter, onLeave, onEnterBack, onLeaveBack
         start: "top bottom",
         end: "bottom top",
         onEnter: () =>
           gsap.fromTo(
             sectionRef.current,
-            { opacity: 0, y: +120 },
-            { opacity: 1, y: 0, duration: 1 },
+            { opacity: 0 },
+            { opacity: 1, duration: 1.5 },
           ),
       });
     }

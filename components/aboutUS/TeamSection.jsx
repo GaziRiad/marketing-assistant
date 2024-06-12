@@ -22,7 +22,11 @@ function TeamSection() {
         start: "top bottom",
         end: "bottom top",
         onEnter: () =>
-          gsap.fromTo(imgRef.current, { scale: 0 }, { scale: 1, duration: 1 }),
+          gsap.fromTo(
+            imgRef.current,
+            { scale: 0 },
+            { scale: 1, duration: 1.5 },
+          ),
       });
     }
 
