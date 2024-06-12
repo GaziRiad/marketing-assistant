@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useRef } from "react";
 import { HiInboxArrowDown } from "react-icons/hi2";
 import { IoIosArrowDown, IoMdSend } from "react-icons/io";
 import { IoDocumentsOutline, IoStar } from "react-icons/io5";
@@ -10,8 +12,60 @@ import FocusContent from "./FocusContent";
 import { useTemplate } from "@/components/context/TemplateContext";
 import Image from "next/image";
 
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+
 const Templates = () => {
   const { selectedTemplate } = useTemplate();
+
+  const contentRef = useRef(null);
+
+  useEffect(() => {
+    // // Ensure your elements exist
+    // if (contentRef.current) {
+    //   // Use the ScrollTrigger.create static method to set up the animation
+    //   ScrollTrigger.create({
+    //     trigger: contentRef.current, // Reference to your DOM element
+    //     toggleActions: "play none none none", // Actions: onEnter, onLeave, onEnterBack, onLeaveBack
+    //     start: "top bottom",
+    //     end: "bottom top",
+    //     scrub: true,
+    //     onEnter: () =>
+    //       gsap.fromTo(
+    //         contentRef.current,
+    //         { opacity: 0 },
+    //         { opacity: 1, duration: 0.6, ease: "power1.inOut" },
+    //       ),
+    //   });
+    // }
+
+    // Ensure initial conditions are set
+    gsap.set(contentRef.current, { opacity: 0, y: 40 });
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: contentRef.current,
+        start: "top bottom",
+        end: "bottom top",
+        toggleActions: "restart none restart none",
+      },
+    });
+
+    tl.to(contentRef.current, {
+      duration: 0.6,
+      ease: "expoScale",
+      opacity: 1,
+      y: 0,
+    });
+
+    // Proper cleanup of ScrollTrigger
+    return () => {
+      if (tl.scrollTrigger) {
+        tl.scrollTrigger.kill();
+      }
+      tl.kill();
+    };
+  }, [selectedTemplate]);
 
   return (
     <div className="h-full w-full rounded-[40px] bg-white py-5 text-[#545454] ">
@@ -47,11 +101,13 @@ const Templates = () => {
           </div>
         </div>
       </div>
-      {selectedTemplate === "WeeklyTemplates" && <WeeklyTemplates />}
-      {selectedTemplate === "FocusContent" && <FocusContent />}
-      {selectedTemplate === "TeamAndServiceHighlight" && (
-        <TeamAndServiceHighlight />
-      )}
+      <div ref={contentRef}>
+        {selectedTemplate === "WeeklyTemplates" && <WeeklyTemplates />}
+        {selectedTemplate === "FocusContent" && <FocusContent />}
+        {selectedTemplate === "TeamAndServiceHighlight" && (
+          <TeamAndServiceHighlight />
+        )}
+      </div>
     </div>
   );
 };
