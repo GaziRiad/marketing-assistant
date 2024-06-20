@@ -111,21 +111,21 @@ export const benefitsList = [
 
 export const TestimonialList = [
   {
-    image: "/images/owner.png",
+    image: "/images/boutique-owner.jpeg",
     title: "Emily, Boutique Owner",
     text: `
       Running a boutique means I'm always on the move, and finding time for social media was a constant struggle. Since subscribing to My Marketing Assistant, I've seen a noticeable increase in engagement and sales, thanks to their stunning templates and easy-to-follow guides. It feels like I've hired a full-time marketer, but at a fraction of the cost. Absolutely invaluable for my business!
     `,
   },
   {
-    image: "/images/owner.png",
+    image: "/images/coffe-owner.jpeg",
     title: "Marcus, Coffee Shop Owner",
     text: `
       I've always known the power of social media, but never quite managed to harness it until My Marketing Assistant came along. Their weekly bundles are a game-changer, delivering everything I need to connect with my customers consistently. The strategic planning behind each post really shows in the results. Our follower count and customer interaction have never been higher!
     `,
   },
   {
-    image: "/images/owner.png",
+    image: "/images/freelancer.jpeg",
     title: "Anita, Freelance Graphic Designer",
     text: `
       As a freelancer, my focus has always been on my designs, not on marketing them. My Marketing Assistant has transformed how I approach social media. The templates are not only beautiful but also strategically crafted to showcase my work effectively. The guides have turned me from a social media novice to a pro. I'm now engaging more confidently and creatively with my audience!

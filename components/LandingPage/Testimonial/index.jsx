@@ -25,9 +25,9 @@ const Testimonial = () => {
                 ))}
               </div>
               <Image
-                width={50}
-                height={50}
-                className="mt-5 rounded-full"
+                width={320}
+                height={320}
+                className="mt-5 size-20 rounded-full object-cover"
                 src={item.image}
                 alt="Avatar"
               />
