@@ -15,24 +15,24 @@ const Tutorials = () => {
       </div>
       <div className="relative mt-5 flex h-[500px] items-center rounded-b-lg bg-[#107FAA] md:mt-0 md:h-[700px] md:w-1/2 md:rounded-none md:rounded-r-[40px] md:px-10 lg:h-[600px] 2xl:px-32">
         <Image
-          className="h-full w-full object-contain"
+          className="absolute left-1/2 top-1/2 h-[400px] w-[400px] -translate-x-1/2 -translate-y-1/2 object-contain px-4"
           width={2000}
           height={2000}
           src="/images/TutorialsImage.png"
           alt="svg"
         />
-        {/* <video
+        <video
           autoPlay
           loop
           muted
           controls
           playsInline
-          className="h-[220px] w-full rounded-3xl  object-contain 2xl:object-cover"
+          className=" absolute left-1/2 top-1/2 z-20 h-[200px] w-[380px] -translate-x-1/2 -translate-y-[68%] object-contain px-4 2xl:object-cover"
         >
           <source src={"/vidoes/desk-video.mp4"} type="video/mp4" />
           <track kind="captions" label="English" default />
           Your browser does not support the video tag.
-        </video> */}
+        </video>
       </div>
     </div>
   );

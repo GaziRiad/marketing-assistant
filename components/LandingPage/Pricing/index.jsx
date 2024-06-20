@@ -33,7 +33,7 @@ const Pricing = () => {
             <span className="text-8xl">25</span>
           </h2>
           <p className="my-2 text-2xl font-light">per week</p>
-          <button className="mt-4 rounded-lg bg-[#5ACBF0] px-10 py-3">
+          <button className="mt-4 rounded-lg bg-[#5ACBF0] px-10 py-3 transition-all hover:bg-[#51b7d8]">
             start your free trial
           </button>
           <h1 className="mt-20 text-center text-5xl font-medium">
