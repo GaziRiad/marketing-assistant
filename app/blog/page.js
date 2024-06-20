@@ -80,7 +80,7 @@ async function getPosts() {
 }
 
 export const metadata = {
-  title: "BLOG",
+  title: "Marketing assistant | BLOG",
 };
 
 async function Blog() {

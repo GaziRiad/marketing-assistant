@@ -8,6 +8,10 @@ import {
   Pricing,
 } from "@/components/LandingPage";
 
+export const metadata = {
+  title: "Marketing assistant | HOME",
+};
+
 function Home() {
   return (
     <div>
