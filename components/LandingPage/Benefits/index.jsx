@@ -1,43 +1,53 @@
 "use client";
 import { benefitsList } from "@/app/lib/constant";
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
+import gsap from "gsap";
 
 const Benefits = () => {
   const [selectedBenefit, setSelectedBenefit] = useState(benefitsList[1]);
 
+  const benefitRefs = useRef([]);
+
+  useEffect(() => {
+    gsap.fromTo(".textBlock", { opacity: 0 }, { opacity: 1, duration: 1 });
+  }, [selectedBenefit]);
+
+  useEffect(() => {
+    if (benefitRefs.current[selectedBenefit.title]) {
+      gsap.fromTo(
+        benefitRefs.current[selectedBenefit.title],
+        { opacity: 0, color: "#545454", textDecoration: "none" },
+        {
+          opacity: 1,
+          color: "#F45B69",
+          textDecoration: "underline",
+          duration: 1,
+        },
+      );
+    }
+  }, [selectedBenefit]);
+
   return (
-    <div className="container flex sm:flex-row flex-col items-center">
-      <div className="sm:w-[60%] font-bold">
-        <p className="md:text-3xl text-2xl text-[#545454]">
+    <div className="container flex flex-col items-center sm:flex-row">
+      <div className="font-bold sm:w-[60%]">
+        <p className="text-2xl text-[#545454] md:text-3xl">
           It will be your best investment
         </p>
-        <p className="md:text-3xl text-2xl text-[#F45B69]">
+        <p className="text-2xl text-[#F45B69] md:text-3xl">
           that eliminates all{" "}
           <span className="underline underline-offset-2">excuses.</span>
         </p>
         {benefitsList.map((benefit, index) => (
-          <h1
+          <p
             key={index}
             onClick={() => setSelectedBenefit(benefit)}
-            className={`mt-7 cursor-pointer md:text-5xl text-xl font-bold ${
-              benefit.title === "Budget Friendly" ? "md:text-7xl text-3xl" : ""
-            } ${
-              benefit.title === "360 Digital" ? "md:text-7xl text-2xl" : ""
-            } ${
-              selectedBenefit.title === benefit.title
-                ? "text-[#F45B69] underline underline-offset-2"
-                : benefit.title === "Budget Friendly"
-                ? "text-[#272727]"
-                : benefit.title === "360 Digital"
-                ? "text-[#343434]"
-                : "text-[#474747]"
-            }`}
+            className={`mt-7 cursor-pointer text-xl font-bold ${index === 0 ? "text-neutral-950" : index === 1 ? "text-neutral-900" : index === 2 ? "text-neutral-800" : index === 3 ? "text-neutral-700" : index === 4 ? "text-neutral-600" : index === 5 ? "text-neutral-600" : index === 6 ? "text-neutral-500" : ""} ${selectedBenefit.title === benefit.title ? "!text-[#F45B69] underline underline-offset-2" : ""} md:text-6xl`}
           >
             {benefit.title}
-          </h1>
+          </p>
         ))}
       </div>
-      <div className="sm:w-[40%] mt-5 sm:mt-0">
+      <div className="textBlock mt-5 sm:mt-0 sm:w-[40%]">
         <p className="text-lg text-[#F45B69]">
           “Marketing efforts are being sidelined by more pressing tasks.”
         </p>

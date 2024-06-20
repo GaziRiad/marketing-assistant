@@ -13,7 +13,6 @@ import { useTemplate } from "@/components/context/TemplateContext";
 import Image from "next/image";
 
 import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
 
 const Templates = () => {
   const { selectedTemplate } = useTemplate();
@@ -21,24 +20,6 @@ const Templates = () => {
   const contentRef = useRef(null);
 
   useEffect(() => {
-    // // Ensure your elements exist
-    // if (contentRef.current) {
-    //   // Use the ScrollTrigger.create static method to set up the animation
-    //   ScrollTrigger.create({
-    //     trigger: contentRef.current, // Reference to your DOM element
-    //     toggleActions: "play none none none", // Actions: onEnter, onLeave, onEnterBack, onLeaveBack
-    //     start: "top bottom",
-    //     end: "bottom top",
-    //     scrub: true,
-    //     onEnter: () =>
-    //       gsap.fromTo(
-    //         contentRef.current,
-    //         { opacity: 0 },
-    //         { opacity: 1, duration: 0.6, ease: "power1.inOut" },
-    //       ),
-    //   });
-    // }
-
     // Ensure initial conditions are set
     gsap.set(contentRef.current, { opacity: 0, y: 40 });
 

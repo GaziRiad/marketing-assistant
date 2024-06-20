@@ -11,15 +11,15 @@ const ProfilePreview = () => {
       <div>
         <div className="absolute top-10 h-[100px] w-[100px] rounded-3xl bg-[#F45B69] md:h-[218px] md:w-[218px] md:rounded-[40px]" />
         <div className="absolute right-0 top-[39%] h-[100px] w-[100px] rounded-3xl bg-[#F45B69] md:h-[218px] md:w-[218px] md:rounded-[40px]" />
-        <div className="absolute right-2 top-[20%]">
+        <div className="absolute left-1/2 top-[20%] z-40 w-3/4 -translate-x-1/2">
           {selectedTemplate === "TeamAndServiceHighlight" ? (
             <div className="relative flex items-center justify-center">
               <Image
                 className="relative bottom-5 z-10 h-[300px] object-contain sm:h-[400px] sm:w-full sm:object-cover md:h-[550px] xl:h-full"
                 src="/images/ProfilePreviewImg2-removebg-preview.png"
                 alt="Logo"
-                width={700}
-                height={700}
+                width={1200}
+                height={1200}
               />
               <video
                 autoPlay
@@ -38,8 +38,8 @@ const ProfilePreview = () => {
               className="relative bottom-5 z-10 h-[300px] object-contain sm:h-[400px] sm:w-full sm:object-cover md:h-[550px] xl:h-full"
               src={profilePrev}
               alt="Logo"
-              width={700}
-              height={700}
+              width={1200}
+              height={1200}
             />
           )}
         </div>

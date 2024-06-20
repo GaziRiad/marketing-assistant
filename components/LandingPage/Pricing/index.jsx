@@ -20,13 +20,20 @@ const Pricing = () => {
 
   return (
     <>
-      <div className="container text-white">
+      <div className="container font-main text-white">
         <div className="flex flex-col items-center justify-center">
           <p className="mt-20 text-2xl font-bold">PRICING PLAN</p>
-          <h1 className="mt-20 text-4xl font-bold text-center">clear and simple</h1>
-          <h2 className="mt-10 text-4xl font-bold">$25</h2>
-          <p className="my-5 font-bold">per week</p>
-          <button className="rounded-lg bg-[#5ACBF0] px-10 py-3">
+          <h1 className="mt-12 text-center text-6xl font-normal">
+            clear and simple
+          </h1>
+          <h2 className="relative mt-10 font-bold">
+            <span className="absolute -left-1/3 top-0 font-spartan text-5xl">
+              $
+            </span>
+            <span className="text-8xl">25</span>
+          </h2>
+          <p className="my-2 text-2xl font-light">per week</p>
+          <button className="mt-4 rounded-lg bg-[#5ACBF0] px-10 py-3">
             start your free trial
           </button>
           <h1 className="mt-20 text-center text-5xl font-medium">
@@ -36,13 +43,13 @@ const Pricing = () => {
             {pricingPlans.map((plan, index) => (
               <div
                 key={index}
-                className="relative flex md:h-[374px] h-[274px] w-full items-center justify-center rounded-[40px] lg:h-[474px]"
+                className="relative flex h-[274px] w-full items-center justify-center rounded-[40px] md:h-[374px] lg:h-[474px]"
                 style={{ backgroundColor: plan.color }}
               >
-                <p className="absolute md:-left-10 left-5  text-[10rem] font-bold sm:text-[15rem] md:text-[13rem] lg:text-[15rem] 2xl:text-[25rem] mr-5">
+                <p className="absolute left-5 mr-5  text-[10rem] font-bold sm:text-[15rem] md:-left-10 md:text-[13rem] lg:text-[15rem] 2xl:text-[25rem]">
                   3
                 </p>
-                <div className="ml-auto lg:mr-5 mr-1 text-center text-base font-bold sm:text-2xl md:text-lg lg:text-3xl">
+                <div className="ml-auto mr-1 text-center text-base font-bold sm:text-2xl md:text-lg lg:mr-5 lg:text-3xl">
                   {plan.text === "SOCIAL MEDIA GUIDES" ? (
                     <p className="leading-7">
                       SOCIAL MEDIA <br />
