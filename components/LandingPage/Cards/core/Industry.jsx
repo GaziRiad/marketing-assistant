@@ -28,7 +28,7 @@ const Industry = () => {
                   <Card>
                     <CardContent>
                       <Image
-                        className="h-[300px] w-full rounded-md object-cover md:h-[300px]"
+                        className="h-[300px] w-full rounded-md bg-[#89B9D1] object-cover md:h-[300px]"
                         alt={item.alt}
                         src={item.src}
                         width={500}

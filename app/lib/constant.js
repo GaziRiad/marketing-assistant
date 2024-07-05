@@ -111,24 +111,45 @@ export const benefitsList = [
 
 export const TestimonialList = [
   {
-    image: "/images/boutique-owner.jpeg",
+    image: "/images/testimonials/boutique-owner.jpg",
     title: "Emily, Boutique Owner",
     text: `
       Running a boutique means I'm always on the move, and finding time for social media was a constant struggle. Since subscribing to My Marketing Assistant, I've seen a noticeable increase in engagement and sales, thanks to their stunning templates and easy-to-follow guides. It feels like I've hired a full-time marketer, but at a fraction of the cost. Absolutely invaluable for my business!
     `,
   },
   {
-    image: "/images/coffe-owner.jpeg",
+    image: "/images/testimonials/coffe-owner.jpg",
     title: "Marcus, Coffee Shop Owner",
     text: `
       I've always known the power of social media, but never quite managed to harness it until My Marketing Assistant came along. Their weekly bundles are a game-changer, delivering everything I need to connect with my customers consistently. The strategic planning behind each post really shows in the results. Our follower count and customer interaction have never been higher!
     `,
   },
   {
-    image: "/images/freelancer.jpeg",
+    image: "/images/testimonials/freelancer.jpg",
     title: "Anita, Freelance Graphic Designer",
     text: `
       As a freelancer, my focus has always been on my designs, not on marketing them. My Marketing Assistant has transformed how I approach social media. The templates are not only beautiful but also strategically crafted to showcase my work effectively. The guides have turned me from a social media novice to a pro. I'm now engaging more confidently and creatively with my audience!
+    `,
+  },
+  {
+    image: "/images/testimonials/coach.jpg",
+    title: "Julia, Wellness Coach",
+    text: `
+      I struggled with maintaining a consistent presence online, which is crucial in the wellness industry. My Marketing Assistant has taken the guesswork out of when and what to post. Their scheduled content templates keep my social media feeds active and engaging, even during my busiest weeks. It’s like having a personal assistant who knows exactly what my audience needs to hear!
+    `,
+  },
+  {
+    image: "/images/testimonials/food-owner.jpg",
+    title: "Tom, Specialty Food Store Owner",
+    text: `
+      "Before My Marketing Assistant, I was spending too much on various disjointed marketing tools and still not seeing the results I wanted. This service is a budget-friendly miracle, offering all the resources I need in one place. I'm now able to produce high-quality, professional-looking posts that resonate with my clientele, all for less than the cost of a weekly lunch out."
+    `,
+  },
+  {
+    image: "/images/testimonials/jewelry-maker.jpg",
+    title: "Lila, Independent Jewelry Maker",
+    text: `
+      "Finding time for social media was tough until My Marketing Assistant came along. Their templates and guides boosted my engagement and sales tremendously. It's like having a full-time marketer on a part-time budget!"
     `,
   },
 ];

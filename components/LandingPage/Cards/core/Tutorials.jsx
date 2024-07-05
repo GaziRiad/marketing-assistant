@@ -29,7 +29,7 @@ const Tutorials = () => {
           playsInline
           className=" absolute left-1/2 top-1/2 z-20 h-[200px] w-[380px] -translate-x-1/2 -translate-y-[68%] object-contain px-4 2xl:object-cover"
         >
-          <source src={"/vidoes/desk-video.mp4"} type="video/mp4" />
+          <source src={"/vidoes/deskVideo.mp4"} type="video/mp4" />
           <track kind="captions" label="English" default />
           Your browser does not support the video tag.
         </video>
