@@ -4,7 +4,7 @@ import React from "react";
 const TeamAndServiceHighlightBody = () => {
   return (
     <div>
-      <div className="mt-3 grid sm:grid-cols-[30%_70%] gap-3 pl-5 pr-5">
+      <div className="mt-1 grid gap-x-3 gap-y-1 pl-5 pr-5 sm:grid-cols-[30%_70%]">
         <div className="flex h-full">
           <Image
             className="w-full object-cover"
@@ -14,7 +14,7 @@ const TeamAndServiceHighlightBody = () => {
             height={350}
           />
         </div>
-        <div className="h-full w-full">
+        <div className="h-fit w-full">
           <div className="flex h-full items-center rounded-xl bg-[#FCDE67] p-3 text-[11px] lg:text-base xl:text-[11px]">
             <p className="font-normal text-[#3a3a3a]">
               Meet the{" "}
@@ -36,12 +36,12 @@ const TeamAndServiceHighlightBody = () => {
             </p>
           </div>
         </div>
-        <div className="ml-5 hidden w-max items-center justify-center rounded-3xl bg-[#DB504A] px-2 text-xs text-white md:flex">
+        <div className="ml-5 hidden w-max items-center justify-center rounded-3xl bg-[#DB504A] px-2 text-[6px] text-white md:flex">
           go to template
         </div>
       </div>
-      <div className="mt-5 border-t-[3px] border-dashed border-red-500" />
-      <div className="mt-3 grid sm:grid-cols-[30%_70%] gap-x-3 sm:pl-5 sm:pr-5 px-2">
+      <div className="mt-2 border-t-[3px] border-dashed border-red-500" />
+      <div className="mt-1 grid gap-x-3 px-2 sm:grid-cols-[30%_70%] sm:pl-5 sm:pr-5">
         <div className="flex h-full">
           <Image
             className="w-full object-cover"
@@ -90,12 +90,11 @@ const TeamAndServiceHighlightBody = () => {
             </p>
           </div>
         </div>
-        <div className="ml-5 mt-3 hidden w-max items-center justify-center rounded-3xl bg-[#DB504A] px-2 text-xs text-white md:flex">
+        <div className="ml-5 mt-1 hidden w-max items-center justify-center rounded-3xl bg-[#DB504A] px-2 text-[6px] text-white md:flex">
           go to template
         </div>
       </div>
-      <div className="mt-5 border-t-[3px] border-dashed border-red-500" />
-      
+      <div className="mt-2 border-t-[3px] border-dashed border-red-500" />
     </div>
   );
 };
