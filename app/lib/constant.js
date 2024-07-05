@@ -81,31 +81,39 @@ export const FocusContentFooterCaptions = [
 export const benefitsList = [
   {
     title: "Budget Friendly",
-    text: "Budget Friendly- Marketing efforts are being sidelined by more pressing tasks. Every week, e-mails arrive like clockwork, landing in your inbox at the same magical hour every week. Imagine a world where your digital marketing materializes effortlessly, lightening your load and sparking a steady blaze of digital marketing brilliance.",
+    excuse: "My budget is limited.",
+    text: "My marketing assistant works like a large marketing department composed of designers, copywriters, and marketing experts, allowing you to effortlessly manage all your social media accounts for just the price of a weekly coffee, instead of incurring employee costs that would normally exceed $5000. Additionally, it saves you time, enabling you to devote your attention to other dynamics of your business and continue to create added value.",
   },
   {
-    title: "360 Digital",
-    text: "360 Digital- Marketing efforts are being sidelined by more pressing tasks. Every week, e-mails arrive like clockwork, landing in your inbox at the same magical hour every week. Imagine a world where your digital marketing materializes effortlessly, lightening your load and sparking a steady blaze of digital marketing brilliance.",
+    title: "360* Digital Marketing",
+    excuse:
+      "I don't have the expertise to cover all digital marketing aspects.",
+    text: "With My Marketing Assistant, gain access to a comprehensive suite of templates and guides that span the entirety of digital marketing - from social media templates to email campaign guides. We empower you with the tools and knowledge to execute a full-spectrum strategy effortlessly, ensuring no aspect of your online presence is left untapped.",
   },
   {
-    title: "Easy",
-    text: "Marketing efforts are being sidelined by more pressing tasks. Every week, e-mails arrive like clockwork, landing in your inbox at the same magical hour every week. Imagine a world where your digital marketing materializes effortlessly, lightening your load and sparking a steady blaze of digital marketing brilliance.",
-  },
-  {
-    title: "Consistent",
-    text: "Consistency is key in marketing. Our services ensure that your marketing efforts are regular and reliable, keeping your audience engaged and your brand at the forefront of their minds.",
+    title: "Easy & Challenging",
+    excuse: "I'm not sure I can handle complex marketing tasks.",
+    text: "Our service is designed to simplify complex marketing strategies into easy-to-follow steps, ensuring beginners can start without feeling overwhelmed. Simultaneously, we provide challenging content for those ready to take their marketing to the next level, ensuring your growth journey never plateaus.",
   },
   {
     title: "Saves Time",
-    text: "Save time with our streamlined marketing processes. We handle the heavy lifting so you can focus on what matters most: growing your business.",
+    excuse: "I'm too busy to work on marketing",
+    text: "My Marketing Assistant saves you countless hours by delivering ready-to-use, customizable content templates and captions every week. Spend less time brainstorming and creating from scratch, and more time engaging your audience and growing your business",
   },
   {
-    title: "Unique & Creative",
-    text: "Stand out with unique and creative marketing solutions. We bring fresh ideas and innovative strategies to make your brand unforgettable.",
+    title: "Consistent",
+    excuse: "I struggle to post consistently.",
+    text: "Consistency is key in digital marketing, and we've got you covered. With our weekly subscription, you'll receive a steady flow of content ideas and materials, ensuring your digital presence remains vibrant and engaging, keeping your audience always interested.",
+  },
+  {
+    title: "Different & Creative",
+    excuse: "I can't seem to make my brand stand out.",
+    text: "In a world where uniqueness captures attention, My Marketing Assistant ensures your brand stands out. Our templates and guides are crafted to spark creativity, allowing you to differentiate your messaging and visuals, and make a memorable impact.",
   },
   {
     title: "For every industry",
-    text: "Our marketing solutions are tailored to fit every industry. No matter your field, we have the expertise to help you succeed.",
+    excuse: "My industry is unique; generic content won't work.",
+    text: "Understanding the diverse needs of different industries, our templates and guides are versatile and adaptable to any sector. Whether you're in fashion, technology, or services, My Marketing Assistant equips you with the tools to create content that resonates with your specific audience.",
   },
 ];
 

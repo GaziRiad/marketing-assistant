@@ -4,7 +4,7 @@ import React, { useState, useRef, useEffect } from "react";
 import gsap from "gsap";
 
 const Benefits = () => {
-  const [selectedBenefit, setSelectedBenefit] = useState(benefitsList[1]);
+  const [selectedBenefit, setSelectedBenefit] = useState(benefitsList[0]);
 
   const benefitRefs = useRef([]);
 
@@ -48,9 +48,7 @@ const Benefits = () => {
         ))}
       </div>
       <div className="textBlock mt-5 sm:mt-0 sm:w-[40%]">
-        <p className="text-lg text-[#F45B69]">
-          “Marketing efforts are being sidelined by more pressing tasks.”
-        </p>
+        <p className="text-lg text-[#F45B69]">“{selectedBenefit.excuse}”</p>
         <p className="text-lg text-[#393E41]">{selectedBenefit.text}</p>
       </div>
     </div>
