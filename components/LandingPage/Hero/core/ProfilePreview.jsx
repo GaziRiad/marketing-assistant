@@ -131,6 +131,11 @@ function ProfilePreview() {
                 </div>
               </div>
             ))}
+            <div className="mt-5 flex flex-col items-center justify-center gap-2">
+              <p className=" size-3 rounded-full bg-white"></p>
+              <p className=" size-3 rounded-full bg-white"></p>
+              <p className=" size-3 rounded-full bg-white"></p>
+            </div>
           </div>
         </div>
       )}

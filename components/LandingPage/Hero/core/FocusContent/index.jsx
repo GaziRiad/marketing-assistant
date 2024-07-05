@@ -32,10 +32,32 @@ const FocusContent = () => {
                 width={600}
                 height={600}
                 alt=""
-                src="/images/WeeklyTemplates2.png"
-                className=" w-full bg-red-500"
+                src="/images/pc-mockup.svg"
+                className=" mb-4 w-full"
               />
             </div>
+            <p className="mb-2 text-xs">
+              First of, let us explain how doing this will benefit you.
+            </p>
+            <p className="mb-2 text-xs">
+              👉 If you examine the movements on your social media accounts, you
+              will get to know your target groups and potential clients better.
+              You will learn the demographics of your followers and this will
+              give you better insights on what kind of content you should be
+              preparing.
+            </p>
+            <p className="mb-2 text-xs">
+              👉 You can observe which content receives more likes and
+              interaction. This way, you can keep creating similar content in
+              the future.
+            </p>
+            <p className="text-xs">
+              👉 It will help you to understand your competitors better. You can
+              learn when they post, who follows them, how much interaction they
+              receive and many other important things. However, in order to gain
+              information about your competitors, you need to use paid 3rd party
+              analytic tools.
+            </p>
           </div>
           <div className=" relative flex h-fit flex-col gap-1 rounded-md bg-[#EDD5C7] px-2 pb-32 pt-2 text-xs">
             <p className="flex flex-col gap-0.5">
