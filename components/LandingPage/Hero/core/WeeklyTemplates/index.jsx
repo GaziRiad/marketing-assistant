@@ -6,12 +6,9 @@ import Image from "next/image";
 import React from "react";
 
 const WeeklyTemplates = () => {
-
   return (
     <div className="px-2 md:px-14">
-      <div
-        className="mt-5 w-full rounded-[40px] border-2 border-[#A6A6A6] pb-5"
-      >
+      <div className="mt-5 w-full rounded-[40px] border-2 border-[#A6A6A6] pb-5">
         <div className="px-5 pt-5 md:px-10">
           <Image
             src={"/images/logotag.png"}

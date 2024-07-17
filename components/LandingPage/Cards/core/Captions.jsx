@@ -16,23 +16,24 @@ const Captions = () => {
           template by <br className="hidden md:block" /> professionals.
         </p>
       </div>
-      <div className="xl:ga-16 mt-5 grid h-[500px] items-center rounded-b-lg bg-[#88A202] pb-5 md:mt-0 md:h-[700px] md:w-1/2 md:gap-8 md:rounded-none md:rounded-r-[40px] md:px-5 lg:h-[600px] xl:grid-cols-2">
-        <Image
-          className="mx-auto h-[260px] w-2/3 object-cover md:w-auto lg:rounded-lg xl:h-[375px] "
-          width={2000}
-          height={2000}
-          src="/images/CaptionsImage.png"
-          alt="svg"
-        />
-        <div className="mx-auto h-fit w-2/3 bg-white px-2 py-5 text-center text-[10px] text-[#C73E1D] sm:text-sm md:w-auto md:rounded-lg md:px-0 lg:text-base xl:h-[375px] ">
-          At [Business name], we provide [product/service] for [adjective, e.g.,
-          health-conscious, busy, stylish] [demographic descriptor e.g.,
-          professionals, athletes, moms] at [a key selling point, e.g., higher
-          quality, faster service, cheaper prices] without the [stress, hassle,
-          inconvenience] of [common problem in your industry, e.g., multiple
-          fees, long wait time, uncomfortable fit]. [Book an appointment, call,
-          visit our website, reserve a table] and join [hundreds of, thousands
-          of, all of our] happy customers today.
+      <div className="mt-5 flex w-full flex-col items-center justify-between rounded-b-lg bg-[#88A202] pb-5 md:mt-0 md:flex-row md:rounded-none md:rounded-r-[40px] md:px-5 ">
+        <div className="flex-1">
+          <Image
+            className="mx-auto object-cover lg:rounded-lg"
+            width={1200}
+            height={1200}
+            src="/images/CaptionsImage.png"
+            alt="svg"
+          />
+        </div>
+        <div className="flex-1">
+          <Image
+            className="mx-auto object-cover lg:rounded-lg"
+            width={1200}
+            height={1200}
+            src="/images/captions2.svg"
+            alt="svg"
+          />
         </div>
       </div>
     </div>

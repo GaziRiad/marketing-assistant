@@ -2,8 +2,6 @@ import { useTemplate } from "@/components/context/TemplateContext";
 import Image from "next/image";
 import React from "react";
 
-import profilePrev from "../../../../public/images/ProfilePreviewImg.png";
-
 const focusContent = [
   [
     "How to schedule a post?",
@@ -23,9 +21,11 @@ function ProfilePreview() {
 
   return (
     <div
-      className={`relative ${selectedTemplate !== "FocusContent" ? "h-[500px]" : ""} w-full rounded-[40px] bg-white px-3 py-5 md:h-[800px] xl:w-[361px]`}
+      className={`relative ${
+        selectedTemplate !== "TeamAndServiceHighlight" ? "h-[500px]" : ""
+      } w-full rounded-[40px] bg-white px-3 py-5 md:h-[800px] xl:w-[361px]`}
     >
-      {selectedTemplate !== "FocusContent" && (
+      {selectedTemplate !== "TeamAndServiceHighlight" && (
         <>
           <div className="absolute top-10 h-[100px] w-[100px] rounded-3xl bg-[#F45B69] md:top-5 md:h-[218px] md:w-[218px] md:rounded-[40px]" />
           <div className="absolute right-0 top-[39%] h-[100px] w-[100px] rounded-3xl bg-[#F45B69] md:h-[218px] md:w-[218px] md:rounded-[40px]" />
@@ -33,7 +33,7 @@ function ProfilePreview() {
         </>
       )}
 
-      {selectedTemplate === "FocusContent" && (
+      {selectedTemplate === "TeamAndServiceHighlight" && (
         <div className=" relative h-fit w-full rounded-[40px] bg-primary py-9">
           <h1 className=" mb-6 text-center font-spartan text-5xl font-extrabold uppercase text-[#E1DDD8]">
             Carefully planned
@@ -65,45 +65,31 @@ function ProfilePreview() {
         </div>
       )}
 
-      <div className="absolute left-1/2 top-[20%] z-40 w-3/4 -translate-x-1/2">
+      <div className="absolute left-1/2 top-[10%] z-40 w-[85%] -translate-x-1/2">
         {selectedTemplate === "WeeklyTemplates" && (
           <div className="relative flex items-center justify-center">
-            <Image
-              className="relative bottom-5 z-10 h-[300px] object-contain sm:h-[400px] sm:w-full sm:object-cover md:h-[550px] xl:h-full"
-              src="/images/ProfilePreviewImg2-removebg-preview.png"
-              alt="Logo"
-              width={1200}
-              height={1200}
-            />
             <video
               autoPlay
               loop
               muted
               playsInline
-              className="absolute top-16 z-10 h-[30%] w-[80%] rounded-3xl object-contain 2xl:object-cover"
+              className="relative z-10 h-[400px] w-full rounded-3xl border-4 border-primary object-cover sm:h-[400px] sm:w-full sm:object-cover md:h-[550px] xl:h-full 2xl:object-cover"
             >
-              <source src="/vidoes/CustomizationVideo.mp4" type="video/mp4" />
+              <source src="/vidoes/weekly-temp-video.mp4" type="video/mp4" />
               <track kind="captions" label="English" default />
               Your browser does not support the video tag.
             </video>
           </div>
         )}
 
-        {selectedTemplate === "TeamAndServiceHighlight" && (
+        {selectedTemplate === "FocusContent" && (
           <div className="relative flex items-center justify-center">
-            <Image
-              className="relative bottom-5 z-10 h-[300px] object-contain sm:h-[400px] sm:w-full sm:object-cover md:h-[550px] xl:h-full"
-              src="/images/ProfilePreviewImg2-removebg-preview.png"
-              alt="Logo"
-              width={1200}
-              height={1200}
-            />
             <video
               autoPlay
               loop
               muted
               playsInline
-              className="absolute top-16 z-10 h-[30%] w-[80%] rounded-3xl object-contain 2xl:object-cover"
+              className="relative z-10 h-[400px] w-full rounded-3xl border-8 border-[#D9D9D9] object-cover sm:h-[400px] sm:w-full sm:object-cover md:h-[550px] xl:h-full 2xl:object-cover"
             >
               <source src="/vidoes/customization.mp4" type="video/mp4" />
               <track kind="captions" label="English" default />
