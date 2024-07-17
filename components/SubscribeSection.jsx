@@ -18,12 +18,6 @@ function SubscribeSection() {
         toggleActions: "play none none none", // Actions: onEnter, onLeave, onEnterBack, onLeaveBack
         start: "top 80%",
         end: "bottom top",
-        // onEnter: () =>
-        //   gsap.fromTo(
-        //     sectionRef.current,
-        //     { borderRadius: "0px" },
-        //     { borderRadius: "100000px", duration: 2, ease: "power4.inOut" },
-        //   ),
       });
     }
 
@@ -39,7 +33,7 @@ function SubscribeSection() {
     <section className="mb-24 max-h-screen text-3xl lg:mb-40 lg:text-5xl">
       <Link
         ref={sectionRef}
-        href="#"
+        href="https://buy.stripe.com/7sI2ae3YE3HC9JS7sC"
         target="_blank"
         className="flex flex-col items-center justify-center rounded-full bg-[#5ACBF0] px-4 py-12 text-center font-spartan font-bold leading-relaxed text-background transition-all hover:bg-[#51b7d8] lg:gap-8 lg:py-80 lg:leading-tight"
       >
