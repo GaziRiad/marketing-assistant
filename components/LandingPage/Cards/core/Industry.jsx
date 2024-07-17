@@ -23,25 +23,23 @@ const Industry = () => {
         <Carousel className="w-full lg:max-w-lg">
           <CarouselContent className="-ml-1">
             {IndustryImageSources.map((item, index) => (
-              <CarouselItem key={index} className="pl-1 ">
-                <div className="p-5">
-                  <Card>
-                    <CardContent>
-                      <Image
-                        className="h-[300px] w-full rounded-md bg-[#89B9D1] object-cover md:h-[300px]"
-                        alt={item.alt}
-                        src={item.src}
-                        width={500}
-                        height={500}
-                      />
-                    </CardContent>
-                  </Card>
-                </div>
+              <CarouselItem key={index} className="pl-1">
+                <Card className="mx-auto w-1/2 md:w-2/3">
+                  <CardContent>
+                    <Image
+                      className="rounded-md bg-[#89B9D1] object-cover"
+                      alt={item.alt}
+                      src={item.src}
+                      width={600}
+                      height={600}
+                    />
+                  </CardContent>
+                </Card>
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <CarouselPrevious className="ml-10" />
+          <CarouselNext className="mr-10" />
         </Carousel>
       </div>
     </div>
