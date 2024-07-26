@@ -31,7 +31,7 @@ const Testimonial = () => {
                 >
                   <div
                     key={index}
-                    className="relative flex w-full flex-col items-center justify-center py-12 shadow-custom"
+                    className="relative flex w-full flex-col items-center justify-start py-12 shadow-custom"
                   >
                     <div className="flex gap-x-2 text-[#FFBC00]">
                       {starsArray.map((_, index) => (
